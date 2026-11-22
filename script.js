@@ -524,7 +524,7 @@
   });
 
   // Live first-year counter. Change this date to customize the anniversary start.
-  const firstYearStart = new Date("2025-11-23T00:00:00");
+  const firstYearStart = new Date("2025-01-30T00:00:00+05:00");
   const updateFirstYearCounter = () => {
     if (!counterDays || !counterHours || !counterMinutes || !yearRing) return;
     const elapsed = Math.max(0, Date.now() - firstYearStart.getTime());
