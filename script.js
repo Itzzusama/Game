@@ -296,10 +296,10 @@
   const launchCelebration = () => {
     if (!celebrationRain || reducedMotion.matches) return;
     celebrationRain.replaceChildren();
-    const symbols = ["♥", "♥", "✿", "❀", "♥", "✦"];
+    const symbols = ["♥", "♥", "✿", "❀"];
     const colors = ["#ffd4e2", "#ff91b5", "#fff0df", "#f35f91", "#f7b9cd", "#e7aa82"];
     const fragment = doc.createDocumentFragment();
-    const count = window.innerWidth < 768 ? 34 : 56;
+    const count = window.innerWidth < 768 ? 64 : 100;
 
     for (let index = 0; index < count; index += 1) {
       const piece = doc.createElement("span");
@@ -524,7 +524,7 @@
   });
 
   // Live first-year counter. Change this date to customize the anniversary start.
-  const firstYearStart = new Date("2025-01-30T00:00:00+05:00");
+  const firstYearStart = new Date("2026-01-30T00:00:00+05:00");
   const updateFirstYearCounter = () => {
     if (!counterDays || !counterHours || !counterMinutes || !yearRing) return;
     const elapsed = Math.max(0, Date.now() - firstYearStart.getTime());
