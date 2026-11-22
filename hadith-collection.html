@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith About Marriage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --burgundy: #8b3a3a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .hadith-header {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hadith-header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .hadith-container {
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .hadith-card {
+            background: white;
+            padding: 40px;
+            margin: 35px 0;
+            border-radius: 10px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            border-right: 6px solid var(--burgundy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hadith-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .hadith-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hadith-title {
+            color: var(--burgundy);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hadith-title::before {
+            content: '✨';
+            margin-right: 15px;
+        }
+
+        .hadith-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #444;
+            margin: 20px 0;
+            padding: 20px;
+            background: #faf8f5;
+            border-left: 4px solid var(--gold);
+            border-radius: 5px;
+        }
+
+        .hadith-reference {
+            color: var(--gold);
+            font-size: 0.95rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .lesson {
+            background: linear-gradient(135deg, #f5f3f0 0%, #fff 100%);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .lesson strong {
+            color: var(--burgundy);
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .hadith-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .hadith-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hadith-header" data-aos="fade-down">
+        <h1>Hadith On Marriage</h1>
+        <p style="font-size: 1.2rem;">Wisdom from the Prophet Muhammad (PBUH) about love and companionship</p>
+    </div>
+
+    <div class="hadith-container">
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="hadith-content">
+                <p class="hadith-title">The Best Among You</p>
+                <p class="hadith-text">"The best of you are those who are best to their wives, and I am the best among you to my wives."</p>
+                <p class="hadith-reference">- Sunan At-Tirmidhi</p>
+                <div class="lesson"><strong>Lesson:</strong> Good character towards a spouse is not a weakness - it's the hallmark of the best believers. The Prophet (PBUH) himself was the kindest to his wives.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="hadith-content">
+                <p class="hadith-title">The Sweetest Thing</p>
+                <p class="hadith-text">"The world is but a collection of things, and the best thing in the world is a good woman."</p>
+                <p class="hadith-reference">- Sunan Ibn Majah</p>
+                <div class="lesson"><strong>Lesson:</strong> A righteous wife is the greatest blessing in this temporary life. Her virtue and character are priceless.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="hadith-content">
+                <p class="hadith-title">Gentleness in Marriage</p>
+                <p class="hadith-text">"Be kind to women! For woman was created from a rib, and the most crooked part of a rib is the top. If you try to straighten it, you will break it; and if you leave it, it will remain crooked. So be kind to women."</p>
+                <p class="hadith-reference">- Sahih Al-Bukhari</p>
+                <div class="lesson"><strong>Lesson:</strong> Women have their own nature and personality. Accepting this with kindness, rather than harshness, is the Islamic way.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="hadith-content">
+                <p class="hadith-title">Among You Like Guests</p>
+                <p class="hadith-text">"O Prophet, tell the believing men to lower their gaze and guard their modesty... And tell the believing women to lower their gaze and guard their modesty."</p>
+                <p class="hadith-reference">- Surah An-Nur 24:30-31</p>
+                <div class="lesson"><strong>Lesson:</strong> Modesty and respect are foundational. A marriage built on mutual respect and honor lasts.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="hadith-content">
+                <p class="hadith-title">The Greatest Blessing</p>
+                <p class="hadith-text">"When a man loves his wife and she loves him, they will be in Paradise together. For love is like a tree whose roots are in the hearts of believers."</p>
+                <p class="hadith-reference">- Islamic Teaching</p>
+                <div class="lesson"><strong>Lesson:</strong> Mutual love in marriage is not just an emotion - it's a path to Jannah, the reward in the Hereafter.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="hadith-content">
+                <p class="hadith-title">Fulfill Her Rights</p>
+                <p class="hadith-text">"The best of you are those who treat their wives well. I have treated my wife well."</p>
+                <p class="hadith-reference">- Sunan Ibn Majah</p>
+                <div class="lesson"><strong>Lesson:</strong> Taking care of a wife's physical, emotional, and spiritual needs is not optional - it's a command from Allah.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">May Allah make us among the best to our spouses</p>
+        <p style="margin-top: 15px;">Ameen Ya Rabb Al-Alamin</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

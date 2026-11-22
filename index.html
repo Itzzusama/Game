@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en" class="surprise-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6a0f24">
+  <meta name="description" content="A first-year birthday keepsake filled with love, duas, Quranic reminders, and heartfelt promises.">
+  <title>Happy Birthday Aiman — From Your Husband Usama</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%239b1b30'/%3E%3Cpath d='M42 13a22 22 0 1 0 8 39A24 24 0 1 1 42 13Z' fill='%23ffe5d1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="surprise-locked">
+  <a class="skip-link" href="#main-content">Skip to the birthday story</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+
+  <header id="birthday-hero" class="birthday-hero">
+    <canvas id="hero-particles" aria-hidden="true"></canvas>
+    <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-arch" aria-hidden="true"><span class="arch-star">✦</span></div>
+    <div id="petal-field" class="petal-field" aria-hidden="true"></div>
+    <div id="celebration-rain" class="celebration-rain" aria-hidden="true"></div>
+    <div id="music-beat-stage" class="music-beat-stage" aria-hidden="true"></div>
+    <button id="birthday-music-toggle" class="music-toggle" type="button" hidden aria-pressed="false" aria-label="Mute birthday tune">
+      <span class="music-icon music-equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="music-label">Birthday tune</span>
+    </button>
+    <!-- Add src="assets/your-song.mp3" to use an optional audio file instead of Web Audio. -->
+    <audio id="birthday-audio-fallback" preload="none"></audio>
+
+    <div id="surprise-intro" class="surprise-intro">
+      <div class="intro-glass">
+        <svg class="intro-crescent" viewBox="0 0 64 64" aria-hidden="true"><path d="M45 8c-13 4-21 18-16 31 4 11 15 17 26 14-6 5-13 8-21 7C18 58 7 44 9 28 11 14 24 4 38 4c3 0 5 1 7 1Z" fill="currentColor"/><path d="M48 18l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L48 18Z" fill="currentColor" opacity=".72"/></svg>
+        <p class="intro-bismillah" lang="ar" dir="rtl">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <div class="intro-rule" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="intro-dedication">To My Beautiful Beloved Wife</p>
+        <button id="open-surprise" class="surprise-open-button" type="button"><span>Tap to begin</span></button>
+      </div>
+    </div>
+
+    <div id="surprise-reveal" class="hero-content surprise-reveal" aria-hidden="true" tabindex="-1">
+      <p class="hero-reveal-eyebrow">A celebration made with love &amp; dua to my beloved wife</p>
+
+      <div class="emblem-scene" id="emblem-scene">
+        <div class="emblem" id="birthday-emblem">
+          <svg class="hero-illustration hero-illustration--left" viewBox="0 0 180 320" aria-hidden="true">
+            <defs><linearGradient id="balloonRose" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7e3"/><stop offset="1" stop-color="#b51f5b"/></linearGradient><linearGradient id="balloonGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2c8"/><stop offset="1" stop-color="#d49a49"/></linearGradient></defs>
+            <g class="svg-balloon svg-balloon--one"><ellipse cx="64" cy="72" rx="37" ry="48" fill="url(#balloonRose)"/><path d="M60 120l4 8 5-8" fill="#b51f5b"/><path d="M64 128c-10 42 16 61 0 119" fill="none" stroke="#f6d3a0" stroke-width="2"/></g>
+            <g class="svg-balloon svg-balloon--two"><ellipse cx="126" cy="116" rx="31" ry="41" fill="url(#balloonGold)"/><path d="M122 157l4 7 5-7" fill="#d49a49"/><path d="M126 164c9 36-17 59-4 110" fill="none" stroke="#f6d3a0" stroke-width="2"/></g>
+            <path class="svg-star" d="M142 35l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1 3-7Z" fill="#f4d39f"/>
+          </svg>
+          <svg class="hero-illustration hero-illustration--right" viewBox="0 0 180 320" aria-hidden="true">
+            <g class="svg-lantern"><path d="M65 61h50l-6 18H71l-6-18Z" fill="#e6c27a"/><path d="M74 79h32l10 82-26 25-26-25 10-82Z" fill="rgba(255,234,186,.18)" stroke="#e6c27a" stroke-width="4"/><path d="M90 83v96M67 128h46" stroke="#e6c27a" stroke-width="3"/><circle cx="90" cy="128" r="18" fill="#ffd99b" opacity=".48"/><path d="M82 59c0-14 16-14 16 0" fill="none" stroke="#e6c27a" stroke-width="4"/></g>
+            <path class="svg-star" d="M42 48l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1 3-7Z" fill="#f4d39f"/><path class="svg-star svg-star--small" d="M136 202l2 5 6 1-4 4 1 6-5-3-5 3 1-6-4-4 6-1 2-5Z" fill="#f7b7ca"/>
+          </svg>
+          <h1 class="birthday-logo" aria-label="Happy Birthday">
+            <span class="birthday-word" aria-hidden="true">Happy</span>
+            <span class="birthday-word" aria-hidden="true">Birthday</span>
+          </h1>
+          <p class="hero-dedication">To my beloved wife <strong>Aiman</strong><span class="name-underline" aria-hidden="true"></span></p>
+          <div class="emblem-flourish" aria-hidden="true"><span></span><i>◆</i><span></span></div>
+        </div>
+      </div>
+
+      <p class="from-husband">From your husband, <strong>Usama</strong></p>
+      <div class="occasion-details" aria-label="Birthday details">
+        <time datetime="2026-11-23">23 November 2026</time>
+        <span class="detail-separator" aria-hidden="true"></span>
+        <span class="milestone-badge">Our First Year</span>
+      </div>
+      <a class="hero-cta magnetic-button" href="#page-journey"><span>Begin Our Story</span></a>
+      <p class="scroll-hint" aria-hidden="true"><span></span> A keepsake made with dua &amp; love</p>
+    </div>
+    <div id="story-transition" class="story-transition" aria-hidden="true"><i></i><i></i><i></i></div>
+  </header>
+  <noscript><style>html.surprise-locked,body.surprise-locked{overflow:auto}.surprise-intro{display:none}.surprise-reveal{opacity:1;visibility:visible;transform:none}</style></noscript>
+
+  <nav class="story-nav" aria-label="Birthday story navigation">
+    <a class="nav-brand" href="#birthday-hero" aria-label="Back to the birthday opening"><span>HB</span><b>23 · 11 · 26</b></a>
+    <div class="nav-featured" aria-label="Featured chapters">
+      <a href="#page-journey">Journey</a>
+      <a href="#page-promises">Promises</a>
+      <a href="#page-verses">Verses</a>
+      <a href="#page-letters">Letters</a>
+      <a href="#page-duas">Duas</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="chapter-menu">
+      <span class="nav-toggle-label">Chapters</span><span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <div id="chapter-menu" class="chapter-menu" aria-hidden="true">
+      <div class="chapter-menu-inner">
+        <p>Explore the keepsake</p>
+          <a href="#page-journey">Our Journey</a>
+          <a href="#page-promises">Promises</a>
+          <a href="#page-qualities">Why I Love You</a>
+          <a href="#page-verses">Quranic Verses</a>
+          <a href="#page-hadith">Hadith</a>
+          <a href="#page-rights">Rights & Duties</a>
+          <a href="#page-letters">Love Letters</a>
+          <a href="#page-duas">Duas</a>
+          <a href="#page-timeline">Timeline</a>
+          <a href="#page-gallery">Memories</a>
+          <a href="#page-inspirations">Inspirations</a>
+          <a href="#page-collection">Collection</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+      <section id="page-journey" class="story-section story-section--journey" aria-labelledby="chapter-journey">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 01</p>
+        <h2 id="chapter-journey" class="sr-only">Our Journey</h2>
+        <div class="chapter-shell">
+<!-- SECTION 1: HERO - The Basmalah -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="bismillah" lang="ar" dir="rtl">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+            <p class="subtitle">In the name of Allah, the Most Gracious, the Most Merciful</p>
+            <h2 class="title">My Journey to You Begins</h2>
+            <p class="date">January 2026</p>
+        </div>
+    </header>
+
+    <!-- SECTION 2: THE DIVINE PROMISE (Quran Verse) -->
+    <section class="verse-section">
+        <div class="container">
+            <div class="ornament">⚜</div>
+            <p class="arabic-verse" lang="ar" dir="rtl">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا"</p>
+            <p class="translation">"And of His signs is that He created for you from yourselves mates that you may find <strong>tranquility</strong> in them..."</p>
+            <p class="reference">- Surah Ar-Rum 30:21</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HEARTFELT MESSAGE -->
+    <section class="message-section">
+        <div class="container">
+            <h2>To My Beloved Wife, Aiman</h2>
+            <p>
+                As we approach our Nikkah, I want you to know that you are not just my choice, but my answered Dua. 
+                I pray that I can be the garment that protects you, just as Allah described us for each other.
+            </p>
+            <p>
+                I promise to honor you, to respect you, and to walk with you towards Jannah. 
+                You are the blessing I waited for, and I thank Allah every day for bringing you into my life.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: OUR FUTURE (Islamic Goals) -->
+    <section class="future-section">
+        <div class="container">
+            <h2>Our Path to Jannah</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🕌</div>
+                    <h3>Faith First</h3>
+                    <p>We will wake each other up for Fajr and keep our home filled with the remembrance of Allah.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">✈️</div>
+                    <h3>Adventure</h3>
+                    <p>From Umrah to exploring the world, I want to see Allah's creation with you by my side.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">❤️</div>
+                    <h3>Mercy</h3>
+                    <p>To always forgive quickly and love deeply, following the Sunnah of our Prophet (PBUH).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chapter-footer">
+        <p>Created with love by your husband, Usama</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-promises" class="story-section story-section--promises" aria-labelledby="chapter-promises">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 02</p>
+        <h2 id="chapter-promises" class="sr-only">Promises</h2>
+        <div class="chapter-shell">
+<div class="promises-header">
+        <h1>My Promises To You</h1>
+        <p>A vow to love, honor, and cherish you in the way of Islam</p>
+    </div>
+
+    <div class="promises-container">
+        <div class="promise-card">
+            <div class="promise-number">1</div>
+            <h3>To Lead with Kindness</h3>
+            <p>I promise to be your protector and guide, following the example of Prophet Muhammad (PBUH). As the Quran says: "The best of you are those who are best to their families" - I will treat you with utmost compassion and respect.</p>
+        </div>
+
+        <div class="promise-card">
+            <div class="promise-number">2</div>
+            <h3>To Honor Your Worth</h3>
+            <p>You are my equal in dignity and worth. I promise to listen to you, value your opinions, and make decisions together. In Islam, a wife is a queen in her home, and I will ensure you feel that honor every single day.</p>
+        </div>
+
+        <div class="promise-card">
+            <div class="promise-number">3</div>
+            <h3>To Strengthen Our Faith</h3>
+            <p>I promise to walk with you towards Allah. We will pray together, learn the Quran together, and raise a family rooted in Islamic values. "O Allah, grant me love for her as you have given me love for my own self."</p>
+        </div>
+
+        <div class="promise-card">
+            <div class="promise-number">4</div>
+            <h3>To Provide and Protect</h3>
+            <p>I promise to work hard to provide for our family with halal income. Your comfort and security are my responsibility, not as a burden, but as a privilege and duty I carry with pride.</p>
+        </div>
+
+        <div class="promise-card">
+            <div class="promise-number">5</div>
+            <h3>To Forgive and Seek Forgiveness</h3>
+            <p>I promise that when we have disagreements, I will forgive quickly and ask for forgiveness sincerely. The Prophet (PBUH) said: "Does one of you beat his wife like a beat a slave, and then embrace her?"- I will always choose gentleness.</p>
+        </div>
+
+        <div class="promise-card">
+            <div class="promise-number">6</div>
+            <h3>To Be Your Best Friend</h3>
+            <p>Beyond being your husband, I want to be your closest confidant and best friend. Someone you can laugh with, cry with, and share your deepest dreams and fears with, always.</p>
+        </div>
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Forever Yours in Allah's Path</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-qualities" class="story-section story-section--qualities" aria-labelledby="chapter-qualities">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 03</p>
+        <h2 id="chapter-qualities" class="sr-only">Why I Love You</h2>
+        <div class="chapter-shell">
+<div class="qualities-hero">
+        <h1>Why I Love You</h1>
+        <p style="font-size: 1.2rem;">The reasons my heart chose you</p>
+    </div>
+
+    <div class="qualities-grid">
+
+        <div class="quality-card">
+            <div class="quality-icon">✨</div>
+            <div class="quality-title">Your Faith</div>
+            <div class="quality-description">Your unwavering commitment to Allah and Islam. The way you pray, the way you think of others, the way you live by Islamic principles.</div>
+            <div class="quality-reason">"Marry for four reasons... for her deen (religion) is best."</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">💚</div>
+            <div class="quality-title">Your Kindness</div>
+            <div class="quality-description">The way you treat people with compassion. Your gentle words and your caring actions make the world a better place.</div>
+            <div class="quality-reason">Kindness is the most beautiful language you speak.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">😊</div>
+            <div class="quality-title">Your Smile</div>
+            <div class="quality-description">That genuine, beautiful smile that lights up my entire world. It's contagious and reminds me why I fall in love with you every single day.</div>
+            <div class="quality-reason">Your smile is my favorite prayer.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">🧠</div>
+            <div class="quality-title">Your Intellect</div>
+            <div class="quality-description">Your thoughtful perspective, your wisdom, and your ability to see things deeply. I love talking to you and learning from your unique mind.</div>
+            <div class="quality-reason">Intelligence in the heart is beauty.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">💪</div>
+            <div class="quality-title">Your Strength</div>
+            <div class="quality-description">The way you face challenges with grace and courage. Your resilience inspires me to be a better version of myself every day.</div>
+            <div class="quality-reason">You are stronger than you believe.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">🎨</div>
+            <div class="quality-title">Your Creativity</div>
+            <div class="quality-description">The way you see beauty in ordinary things. Your creativity and imagination make life with you an adventure.</div>
+            <div class="quality-reason">You paint life in colors I never knew existed.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">🤗</div>
+            <div class="quality-title">Your Empathy</div>
+            <div class="quality-description">Your ability to understand and feel what others feel. You make people feel seen and valued, and you do that for me every day.</div>
+            <div class="quality-reason">You understand me without me having to explain.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">🌟</div>
+            <div class="quality-title">Your Presence</div>
+            <div class="quality-description">Just being near you calms my soul. Your presence brings me peace and comfort in a way nothing else can.</div>
+            <div class="quality-reason">You are my sanctuary.</div>
+        </div>
+
+        <div class="quality-card">
+            <div class="quality-icon">❤️</div>
+            <div class="quality-title">Your Heart</div>
+            <div class="quality-description">The way you love so deeply and purely. You give yourself completely, and that kind of love deserves to be cherished forever.</div>
+            <div class="quality-reason">Your heart is my home.</div>
+        </div>
+
+    </div>
+
+    <div class="quote-section">
+        <p>You are everything I prayed for and more than I dreamed of.</p>
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Eternally Yours</p>
+        <p style="margin-top: 15px;">Thank you for being you</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-verses" class="story-section story-section--verses" aria-labelledby="chapter-verses">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 04</p>
+        <h2 id="chapter-verses" class="sr-only">Quranic Verses</h2>
+        <div class="chapter-shell">
+<div class="verses-hero">
+        <h1>Quranic Verses For Our Journey</h1>
+        <p style="font-size: 1.2rem;">Words of Allah that guide our hearts and unite our souls</p>
+    </div>
+
+    <div class="verses-container">
+        
+        <div class="verse-box">
+            <p class="arabic-text" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+            <p class="english-translation">"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He has put between you affection and mercy."</p>
+            <p class="verse-reference">Surah Ar-Rum 30:21</p>
+            <div class="verse-meaning">This verse beautifully describes marriage in Islam - it's not just a contract, but a sign of Allah's creation based on tranquility (Sakina), affection (Mawaddah), and mercy (Rahmah).</div>
+        </div>
+
+        <div class="verse-box">
+            <p class="arabic-text" lang="ar" dir="rtl">هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ</p>
+            <p class="english-translation">"They are clothing for you and you are clothing for them."</p>
+            <p class="verse-reference">Surah Al-Baqarah 2:187</p>
+            <div class="verse-meaning">This verse uses the metaphor of clothing to show how spouses protect, cover, and care for each other - complete intimacy, comfort, and trust.</div>
+        </div>
+
+        <div class="verse-box">
+            <p class="arabic-text" lang="ar" dir="rtl">الرِّجَالُ قَوَّامُونَ عَلَى النِّسَاءِ بِمَا فَضَّلَ اللَّهُ بَعْضَهُمْ عَلَىٰ بَعْضٍ وَبِمَا أَنفَقُوا مِنْ أَمْوَالِهِمْ</p>
+            <p class="english-translation">"Men are caretakers of women by [right of] what Allah has given one over the other and what they spend [for maintenance] from their wealth."</p>
+            <p class="verse-reference">Surah An-Nisa 4:34</p>
+            <div class="verse-meaning">This doesn't mean dominance, but rather responsibility and care. A husband's role is to provide, protect, and be merciful - a sacred trust from Allah.</div>
+        </div>
+
+        <div class="verse-box">
+            <p class="arabic-text" lang="ar" dir="rtl">وَاللَّاتِي يَأْتِينَ الْفَاحِشَةَ مِن نِّسَائِكُمْ فَاسْتَشْهِدُوا عَلَيْهِنَّ أَرْبَعَةً مِّنكُمْ ۖ فَإِن شَهِدُوا فَأَمْسِكُوهُنَّ فِي الْبُيُوتِ حَتَّىٰ يَتَوَفَّاهُنَّ الْمَوْتُ أَوْ يَجْعَلَ اللَّهُ لَهُنَّ سَبِيلًا</p>
+            <p class="english-translation">"And live with them in kindness. For if you dislike them - perhaps you dislike a thing and Allah brings forth a great deal of good through it."</p>
+            <p class="verse-reference">Surah An-Nisa 4:19</p>
+            <div class="verse-meaning">Even when there are challenges in marriage, we're commanded to treat our spouses with kindness, as Allah may bring goodness through our patience.</div>
+        </div>
+
+        <div class="verse-box">
+            <p class="arabic-text" lang="ar" dir="rtl">وَتُؤْتُونَ أَحَدَهُنَّ قِنطَارًا فَلَا تَأْخُذُوا مِنْهُ شَيْئًا</p>
+            <p class="english-translation">"And give the women [upon marriage] their [bridal] gift as an obligation."</p>
+            <p class="verse-reference">Surah An-Nisa 4:4</p>
+            <div class="verse-meaning">The Mahr (gift) is a sign of respect, honor, and commitment - a tangible expression of the groom's sincerity in the marriage.</div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Amiri', serif; font-size: 1.3rem;" lang="ar" dir="rtl">وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَنُدْخِلُهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ</p>
+        <p style="margin-top: 15px;">May Allah unite our hearts in His path, Ameen</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-hadith" class="story-section story-section--hadith" aria-labelledby="chapter-hadith">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 05</p>
+        <h2 id="chapter-hadith" class="sr-only">Hadith</h2>
+        <div class="chapter-shell">
+<div class="hadith-header">
+        <h1>Hadith On Marriage</h1>
+        <p style="font-size: 1.2rem;">Wisdom from the Prophet Muhammad (PBUH) about love and companionship</p>
+    </div>
+
+    <div class="hadith-container">
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">The Best Among You</p>
+                <p class="hadith-text">"The best of you are those who are best to their wives, and I am the best among you to my wives."</p>
+                <p class="hadith-reference">- Sunan At-Tirmidhi</p>
+                <div class="lesson"><strong>Lesson:</strong> Good character towards a spouse is not a weakness - it's the hallmark of the best believers. The Prophet (PBUH) himself was the kindest to his wives.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">The Sweetest Thing</p>
+                <p class="hadith-text">"The world is but a collection of things, and the best thing in the world is a good woman."</p>
+                <p class="hadith-reference">- Sunan Ibn Majah</p>
+                <div class="lesson"><strong>Lesson:</strong> A righteous wife is the greatest blessing in this temporary life. Her virtue and character are priceless.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">Gentleness in Marriage</p>
+                <p class="hadith-text">"Be kind to women! For woman was created from a rib, and the most crooked part of a rib is the top. If you try to straighten it, you will break it; and if you leave it, it will remain crooked. So be kind to women."</p>
+                <p class="hadith-reference">- Sahih Al-Bukhari</p>
+                <div class="lesson"><strong>Lesson:</strong> Women have their own nature and personality. Accepting this with kindness, rather than harshness, is the Islamic way.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">Among You Like Guests</p>
+                <p class="hadith-text">"O Prophet, tell the believing men to lower their gaze and guard their modesty... And tell the believing women to lower their gaze and guard their modesty."</p>
+                <p class="hadith-reference">- Surah An-Nur 24:30-31</p>
+                <div class="lesson"><strong>Lesson:</strong> Modesty and respect are foundational. A marriage built on mutual respect and honor lasts.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">The Greatest Blessing</p>
+                <p class="hadith-text">"When a man loves his wife and she loves him, they will be in Paradise together. For love is like a tree whose roots are in the hearts of believers."</p>
+                <p class="hadith-reference">- Islamic Teaching</p>
+                <div class="lesson"><strong>Lesson:</strong> Mutual love in marriage is not just an emotion - it's a path to Jannah, the reward in the Hereafter.</div>
+            </div>
+        </div>
+
+        <div class="hadith-card">
+            <div class="hadith-content">
+                <p class="hadith-title">Fulfill Her Rights</p>
+                <p class="hadith-text">"The best of you are those who treat their wives well. I have treated my wife well."</p>
+                <p class="hadith-reference">- Sunan Ibn Majah</p>
+                <div class="lesson"><strong>Lesson:</strong> Taking care of a wife's physical, emotional, and spiritual needs is not optional - it's a command from Allah.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">May Allah make us among the best to our spouses</p>
+        <p style="margin-top: 15px;">Ameen Ya Rabb Al-Alamin</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-rights" class="story-section story-section--rights" aria-labelledby="chapter-rights">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 06</p>
+        <h2 id="chapter-rights" class="sr-only">Rights & Duties</h2>
+        <div class="chapter-shell">
+<div class="rights-hero">
+        <h1>Rights & Duties</h1>
+        <p style="font-size: 1.2rem;">Understanding our Islamic responsibilities to each other</p>
+    </div>
+
+    <div class="rights-container">
+
+        <h2 class="section-title">Husband's Rights Upon His Wife</h2>
+        
+        <div class="rights-grid">
+            <div class="right-card">
+                <div class="right-icon">👫</div>
+                <div class="right-title">Obedience in Allah</div>
+                <div class="right-description">To obey him in matters that are pleasing to Allah, and to follow the rules of Islam within the marriage.</div>
+                <div class="right-verse">"And they [wives] have rights over the men, similar to the rights of the men over them." - Quran 2:228</div>
+            </div>
+
+            <div class="right-card">
+                <div class="right-icon">🏡</div>
+                <div class="right-title">Guardianship of Home</div>
+                <div class="right-description">To manage the household properly and guard it in his absence - both physically and morally.</div>
+                <div class="right-verse">"The best women among you are those who are kind to their husbands and maintain their homes well."</div>
+            </div>
+
+            <div class="right-card">
+                <div class="right-icon">🤝</div>
+                <div class="right-title">Marital Intimacy</div>
+                <div class="right-description">To fulfill the marital relationship in a kind and respectful manner, both physically and emotionally.</div>
+                <div class="right-verse">"Live with them in kindness." - Quran 4:19</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Husband's Duties Towards His Wife</h2>
+        
+        <div class="rights-grid">
+            <div class="right-card">
+                <div class="right-icon">💰</div>
+                <div class="right-title">Financial Support</div>
+                <div class="right-description">To provide halal sustenance and meet all her physical needs. This is not a burden, but a sacred responsibility.</div>
+                <div class="right-verse">"Men are caretakers of women... because of what they spend from their wealth." - Quran 4:34</div>
+            </div>
+
+            <div class="right-card">
+                <div class="right-icon">💚</div>
+                <div class="right-title">Kindness & Respect</div>
+                <div class="right-description">To treat her with kindness, compassion, and dignity. Never with harshness, contempt, or cruelty.</div>
+                <div class="right-verse">"The best of you are those who are best to their wives." - Hadith</div>
+            </div>
+
+            <div class="right-card">
+                <div class="right-icon">🛡️</div>
+                <div class="right-title">Protection & Leadership</div>
+                <div class="right-description">To lead the family with wisdom, protect her honor and family, and guide them towards Allah.</div>
+                <div class="right-verse">"Each of you is a shepherd and is responsible for his flock." - Hadith</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">The Beautiful Balance</h2>
+
+        <div class="comparative-table">
+            <table>
+                <tr>
+                    <th scope="col">Aspect</th>
+                    <th scope="col">Wife's Role</th>
+                    <th scope="col">Husband's Role</th>
+                    <th scope="col">Mutual</th>
+                </tr>
+                <tr>
+                    <td><strong>Love & Affection</strong></td>
+                    <td>💕 Give love freely</td>
+                    <td>💕 Cherish & protect</td>
+                    <td>❤️ Unconditional</td>
+                </tr>
+                <tr>
+                    <td><strong>Respect</strong></td>
+                    <td>🙏 Honor his role</td>
+                    <td>🙏 Honor her dignity</td>
+                    <td>🤝 Equal worth</td>
+                </tr>
+                <tr>
+                    <td><strong>Communication</strong></td>
+                    <td>🗣️ Express needs</td>
+                    <td>🗣️ Listen with care</td>
+                    <td>💬 Open dialogue</td>
+                </tr>
+                <tr>
+                    <td><strong>Faith</strong></td>
+                    <td>🕌 Guard deen</td>
+                    <td>🕌 Lead by example</td>
+                    <td>📖 Walk together</td>
+                </tr>
+                <tr>
+                    <td><strong>Forgiveness</strong></td>
+                    <td>🌸 Forgive quickly</td>
+                    <td>🌸 Ask forgiveness</td>
+                    <td>✨ Release grudges</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="marriage-core">
+            <p class="marriage-core-title">The Core of Islamic Marriage</p>
+            <p class="marriage-core-text">
+                Neither spouse is superior. Instead, we have complementary roles - each with their own strengths and responsibilities. 
+                When both fulfill their duties with love and respect, the marriage becomes a source of mercy, tranquility, and partnership in worshiping Allah.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">United in Faith, Divided in Beauty</p>
+        <p style="margin-top: 15px;">May Allah guide us to fulfill our duties with excellence - Ameen</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-letters" class="story-section story-section--letters" aria-labelledby="chapter-letters">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 07</p>
+        <h2 id="chapter-letters" class="sr-only">Love Letters</h2>
+        <div class="chapter-shell">
+<div class="letters-hero">
+        <h1>Letters From My Heart</h1>
+        <p style="font-size: 1.2rem;">Words that only you can understand</p>
+    </div>
+
+    <div class="letters-container">
+
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab-target="letter1">Birthday I</button>
+            <button class="tab-btn" data-tab-target="letter2">Birthday II</button>
+            <button class="tab-btn" data-tab-target="letter3">Letter 3</button>
+            <button class="tab-btn" data-tab-target="letter4">Letter 4</button>
+            <button class="tab-btn" data-tab-target="letter5">Letter 5</button>
+            <button class="tab-btn" data-tab-target="letter6">Letter 6</button>
+        </div>
+
+        <!-- Birthday Letter 1 -->
+        <div id="letter1" class="tab-content active">
+            <div class="letter birthday-letter">
+                <p class="letter-date">For Your Birthday · 23 November 2026</p>
+                <p class="letter-content">
+                    To My Beautiful Beloved Wife Aiman,
+                </p>
+                <p class="letter-content">
+                    Today is a celebration of the beautiful soul Allah placed in my life. Your smile brings warmth to our home, your kindness makes ordinary days precious, and your presence is one of the greatest blessings for which I thank Allah.
+                </p>
+                <p class="letter-content">
+                    On your birthday, I do not only wish you happiness for one day. I pray for a whole year filled with barakah, strong faith, good health, peaceful mornings, accepted duas, and countless reasons for your heart to smile. May every new chapter bring you closer to Allah and surround you with His mercy.
+                </p>
+                <p class="letter-content">
+                    Aiman, you are my companion, my comfort, and my answered prayer. I am grateful that I can celebrate this beautiful day beside you as your husband.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم بارك لها في عمرها وصحتها وإيمانها، واجعل عامها الجديد عام خير وبركة وسعادة</p>
+                    <p class="dua-translation">“O Allah, bless her life, health, and faith, and make her new year a year of goodness, barakah, and happiness.”</p>
+                </div>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم احفظ زوجتي أيمن بعينك التي لا تنام، وألبسها لباس الصحة والعافية والسكينة</p>
+                    <p class="dua-translation">“O Allah, protect my wife Aiman with Your never-sleeping care, and clothe her in health, well-being, and tranquility.”</p>
+                </div>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+                    <p class="dua-translation">“Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us an example for the righteous.” — Quran 25:74</p>
+                </div>
+                <p class="letter-closing">Happy Birthday, My Beloved Wife</p>
+                <p class="letter-signature">Your Husband, Usama</p>
+            </div>
+        </div>
+
+        <!-- Birthday Letter 2 -->
+        <div id="letter2" class="tab-content">
+            <div class="letter birthday-letter">
+                <p class="letter-date">Our First Year · A Birthday Promise</p>
+                <p class="letter-content">
+                    My Dearest Aiman,
+                </p>
+                <p class="letter-content">
+                    This birthday feels even more special because it belongs to our first year together. Every shared prayer, every quiet conversation, every laugh, and every little moment has become part of a story I want to cherish for the rest of my life.
+                </p>
+                <p class="letter-content">
+                    I pray that I always become a source of peace for you, that I protect your heart with gentleness, and that our home remains filled with faith, mercy, respect, and laughter. Through every season, I want to keep choosing you, supporting you, and walking beside you towards Jannah.
+                </p>
+                <p class="letter-content">
+                    May your dreams unfold beautifully, may your worries become lighter, and may Allah place ease in every path you take. Thank you for being Aiman — the woman whose happiness matters so deeply to me.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم زد بيننا مودة ورحمة، وألّف بين قلوبنا، وبارك لنا في أيامنا القادمة</p>
+                    <p class="dua-translation">“O Allah, increase love and mercy between us, unite our hearts, and bless all the days ahead of us.”</p>
+                </div>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم اجعل أيامها نورًا وفرحًا، وحقق لها ما تتمنى إن كان فيه خير لها</p>
+                    <p class="dua-translation">“O Allah, fill her days with light and joy, and grant her wishes whenever they are good for her.”</p>
+                </div>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم ارزقها قلبًا مطمئنًا، ودعاءً مستجابًا، ورزقًا واسعًا، وحياةً مليئةً برضاك</p>
+                    <p class="dua-translation">“O Allah, grant her a peaceful heart, accepted prayers, abundant provision, and a life filled with Your pleasure.”</p>
+                </div>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم اجمعنا في الفردوس الأعلى كما جمعتنا بالمودة والرحمة في الدنيا</p>
+                    <p class="dua-translation">“O Allah, reunite us in the highest level of Paradise, just as You united us with love and mercy in this world.”</p>
+                </div>
+                <p class="letter-closing">With Every Dua and All My Love</p>
+                <p class="letter-signature">Forever Yours, Usama</p>
+            </div>
+        </div>
+
+        <!-- Letter 3 -->
+        <div id="letter3" class="tab-content">
+            <div class="letter">
+                <p class="letter-date">January 2026</p>
+                <p class="letter-content">
+                    My Beloved,
+                </p>
+                <p class="letter-content">
+                    As I sit and write these words, my heart races thinking about the day you'll read them. Every moment I'm waiting for you, I find myself smiling without reason - thinking of your laugh, your kindness, your patience.
+                </p>
+                <p class="letter-content">
+                    You are the answer to prayers I made in the silence of the night, when I thought no one was listening. But Allah heard me, and sent you. You are His gift to me, wrapped in mercy and compassion.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم يا مقلب القلوب ثبت قلبي على دينك</p>
+                    <p class="dua-translation">"O Allah, O Turner of hearts, make my heart firm upon Your religion"</p>
+                </div>
+                <p class="letter-content">
+                    With all my love and devotion,
+                </p>
+                <p class="letter-closing">Your Husband</p>
+                <p class="letter-signature">Forever Yours</p>
+            </div>
+        </div>
+
+        <!-- Letter 4 -->
+        <div id="letter4" class="tab-content">
+            <div class="letter">
+                <p class="letter-date">For Our Wedding Day</p>
+                <p class="letter-content">
+                    To My Beautiful Bride,
+                </p>
+                <p class="letter-content">
+                    Today, I become your husband. Today, I take on the most important responsibility of my life - to care for you, to honor you, and to walk with you towards Allah's pleasure.
+                </p>
+                <p class="letter-content">
+                    I promise to be your shelter in the storm, your companion in joy, and your support in sorrow. With this Nikkah, I'm not just gaining a wife - I'm gaining my better half, my mirror, my peace.
+                </p>
+                <p class="letter-content">
+                    Every day with you will be my journey to Jannah. I will strive to be worthy of your trust, your love, and your sacrifice.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">اللهم بارك لنا فيما أعطيتنا وقنا عذاب النار</p>
+                    <p class="dua-translation">"O Allah, bless us in what you've given us and protect us from the punishment of Hellfire"</p>
+                </div>
+                <p class="letter-closing">With Infinite Love</p>
+                <p class="letter-signature">Your Forever Husband</p>
+            </div>
+        </div>
+
+        <!-- Letter 5 -->
+        <div id="letter5" class="tab-content">
+            <div class="letter">
+                <p class="letter-date">On Hard Days</p>
+                <p class="letter-content">
+                    My Dearest,
+                </p>
+                <p class="letter-content">
+                    When life gets hard and challenges come, know that I'm here for you. Our marriage is not just for the happy days - it's a bond for every season of life.
+                </p>
+                <p class="letter-content">
+                    I won't always have the perfect words, but I will always have my arms open for you. We'll face every storm together, and Allah will help us through.
+                </p>
+                <p class="letter-content">
+                    You are my strength when I'm weak. You are my hope when I'm lost. Together, with Allah's help, we can overcome anything.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">ربنا آتنا من لدنك رحمة وهيئ لنا من أمرنا رشدا</p>
+                    <p class="dua-translation">"Our Lord, grant us mercy from You and prepare for us from our affair right guidance"</p>
+                </div>
+                <p class="letter-closing">Always By Your Side</p>
+                <p class="letter-signature">Your Loving Husband</p>
+            </div>
+        </div>
+
+        <!-- Letter 6 -->
+        <div id="letter6" class="tab-content">
+            <div class="letter">
+                <p class="letter-date">For Our Children</p>
+                <p class="letter-content">
+                    To My Queen,
+                </p>
+                <p class="letter-content">
+                    When we hold our children for the first time, I want them to see the love between us. I want them to grow up knowing what it means to have parents who love each other and love Allah.
+                </p>
+                <p class="letter-content">
+                    You will be the greatest teacher they ever have. I will stand with you every step of the way. Together, we'll raise a generation that brings honor to Islam and joy to the Ummah.
+                </p>
+                <p class="letter-content">
+                    Our love is not just ours - it's a blessing that will flow through generations. Thank you for being my partner in this sacred mission.
+                </p>
+                <div class="dua-box">
+                    <p lang="ar" dir="rtl">رب اجعل لي ذرية طيبة إنك سميع الدعاء</p>
+                    <p class="dua-translation">"My Lord, grant me righteous offspring. Indeed, You are the Hearer of supplication"</p>
+                </div>
+                <p class="letter-closing">Your Devoted Husband & Father</p>
+                <p class="letter-signature">Forever Grateful</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Love Eternal in Allah's Path</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-duas" class="story-section story-section--duas" aria-labelledby="chapter-duas">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 08</p>
+        <h2 id="chapter-duas" class="sr-only">Duas</h2>
+        <div class="chapter-shell">
+<div class="dua-hero">
+        <h1>Duas For Our Union</h1>
+        <p style="font-size: 1.2rem;">Sacred supplications for our marriage and future</p>
+    </div>
+
+    <div class="dua-gallery">
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">💍</div>
+                <p class="dua-title">For Our Marriage</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم ألّف بيننا كما ألفت بين السماء والأرض</p>
+                <p class="dua-translation">"O Allah, unite our hearts as You united the heavens and earth."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">❤️</div>
+                <p class="dua-title">For Mutual Love</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم ارزقنا حبا لا يزول ودودا بيننا لا ينقطع</p>
+                <p class="dua-translation">"O Allah, bless us with love that doesn't fade and affection that never ends."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">👶</div>
+                <p class="dua-title">For Righteous Children</p>
+                <p class="dua-text" lang="ar" dir="rtl">رب اجعل لي ذرية طيبة إنك سميع الدعاء</p>
+                <p class="dua-translation">"My Lord, grant me righteous offspring. Indeed, You are the Hearer of supplication."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">🤝</div>
+                <p class="dua-title">For Understanding</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم ارزقنا الحكمة والعدل والفهم المتبادل</p>
+                <p class="dua-translation">"O Allah, grant us wisdom, justice, and mutual understanding."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">🕌</div>
+                <p class="dua-title">For a Righteous Home</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم اجعل بيتنا بيت قرآن وذكر وطاعة</p>
+                <p class="dua-translation">"O Allah, make our home a house of Quran, remembrance, and obedience."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">🌙</div>
+                <p class="dua-title">For Guidance</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم اهدنا الصراط المستقيم بأنوار حبك وتقواك</p>
+                <p class="dua-translation">"O Allah, guide us on the straight path with the light of Your love and fear."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">🌸</div>
+                <p class="dua-title">For Compassion</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم اجعلنا من الرحماء الرحيمين مع بعضنا البعض</p>
+                <p class="dua-translation">"O Allah, make us merciful and compassionate with each other."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">✨</div>
+                <p class="dua-title">For Paradise Together</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم أدخلنا الجنة مع أحبابنا وارزقنا برفقة</p>
+                <p class="dua-translation">"O Allah, enter us into Paradise together and bless us with your companionship."</p>
+            </div>
+        </div>
+
+        <div class="dua-card">
+            <div class="dua-card-content">
+                <div class="dua-icon">🤲</div>
+                <p class="dua-title">For Forgiveness</p>
+                <p class="dua-text" lang="ar" dir="rtl">اللهم اغفر لنا ذنوبنا وتقبل منا أعمالنا</p>
+                <p class="dua-translation">"O Allah, forgive us our sins and accept our deeds."</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Ameen Ya Rabb</p>
+        <p style="margin-top: 15px;">May Allah bless our union and grant us a blessed marriage</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-timeline" class="story-section story-section--timeline" aria-labelledby="chapter-timeline">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 09</p>
+        <h2 id="chapter-timeline" class="sr-only">Timeline</h2>
+        <div class="chapter-shell">
+<div class="timeline-hero">
+        <h1>Our Timeline</h1>
+        <p style="font-size: 1.2rem;">From this day forward, our forever begins</p>
+    </div>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">January 30, 2026</div>
+                <div class="timeline-emoji">💍</div>
+                <div class="timeline-title">Nikkah Ceremony</div>
+                <div class="timeline-text">The day we become one before Allah. A sacred bond, witnessed by families and blessed by the Almighty. This is where our journey officially begins.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">2026 - Year One</div>
+                <div class="timeline-emoji">🏠</div>
+                <div class="timeline-title">Building Our Nest</div>
+                <div class="timeline-text">Our first year together. Learning each other's habits, dreams, and quirks. Building the foundation of our home filled with love, laughter, and faith.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">2027 & Beyond</div>
+                <div class="timeline-emoji">⛰️</div>
+                <div class="timeline-title">Adventures Together</div>
+                <div class="timeline-text">Exploring the world, seeking knowledge, performing Umrah, and creating memories. Adventures that strengthen our bond and deepen our gratitude to Allah.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">Soon</div>
+                <div class="timeline-emoji">👶</div>
+                <div class="timeline-title">Growing Our Family</div>
+                <div class="timeline-text">Children born from love and raised in the way of Islam. Witnessing their first smile, their first words, and their first understanding of faith through our example.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">Lifetime</div>
+                <div class="timeline-emoji">🌳</div>
+                <div class="timeline-title">Growing Old Together</div>
+                <div class="timeline-text">Through every season - young and vibrant, mature and wise, grey-haired and grateful. Standing by each other's side, as promised on our wedding day.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">Forever</div>
+                <div class="timeline-emoji">💫</div>
+                <div class="timeline-title">Jannah Together</div>
+                <div class="timeline-text">If Allah wills, meeting again in Paradise - where we'll be reunited, free from all pain and sorrow, in eternal bliss and happiness together.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">A journey of two hearts, one soul</p>
+        <p style="margin-top: 15px;">Forever written in the pages of time</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-gallery" class="story-section story-section--gallery" aria-labelledby="chapter-gallery">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 10</p>
+        <h2 id="chapter-gallery" class="sr-only">Memories</h2>
+        <div class="chapter-shell">
+<div class="gallery-hero">
+        <h1>Our Gallery</h1>
+        <p style="font-size: 1.2rem;">Memories captured, moments cherished</p>
+    </div>
+
+    <div class="gallery-container">
+
+        <h2 style="text-align: center; color: var(--rose); font-size: 2rem; margin: 40px 0 30px;">Photo Collection</h2>
+        
+        <div class="photo-grid">
+            <div class="photo-frame">
+                <div class="photo-placeholder">📷</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame">
+                    <div class="photo-placeholder">💍</div>
+                </div>
+                <p class="photo-caption">The Engagement</p>
+            </div>
+
+            <div class="photo-frame">
+                <div class="photo-placeholder">💒</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame">
+                    <div class="photo-placeholder">👰🤵</div>
+                </div>
+                <p class="photo-caption">Our Wedding</p>
+            </div>
+
+            <div class="photo-frame">
+                <div class="photo-placeholder">❤️</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame">
+                    <div class="photo-placeholder">✈️</div>
+                </div>
+                <p class="photo-caption">Adventures</p>
+            </div>
+
+            <div class="photo-frame">
+                <div class="photo-placeholder">🏡</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame">
+                    <div class="photo-placeholder">👨‍👩‍👧‍👦</div>
+                </div>
+                <p class="photo-caption">Our Family</p>
+            </div>
+        </div>
+
+        <div class="collection-stats">
+            <div class="stat-box">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Moments Together</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Hearts United</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Soul</div>
+            </div>
+        </div>
+
+        <div class="memory-timeline">
+            <h2>Beautiful Memories</h2>
+
+            <div class="memory-item">
+                <div class="memory-image">💝</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Beginning</p>
+                    <p class="memory-title">When Our Hearts First Met</p>
+                    <p class="memory-description">The moment you came into my life, everything changed. Suddenly, I understood what all the poets were writing about. You became my inspiration, my prayer, and my greatest blessing.</p>
+                </div>
+            </div>
+
+            <div class="memory-item">
+                <div class="memory-image">✨</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Proposal</p>
+                    <p class="memory-title">When I Asked Forever</p>
+                    <p class="memory-description">With trembling hands and a hopeful heart, I asked you to be my wife, my partner, my reason for striving towards Jannah. Your yes was the sweetest word I've ever heard.</p>
+                </div>
+            </div>
+
+            <div class="memory-item">
+                <div class="memory-image">💍</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Nikkah</p>
+                    <p class="memory-title">The Day We Became One</p>
+                    <p class="memory-description">Standing before Allah and witnesses, we took our vows. In that sacred moment, two souls became partners for life. Every tear shed was a promise made in His presence.</p>
+                </div>
+            </div>
+
+            <div class="memory-item">
+                <div class="memory-image">🌙</div>
+                <div class="memory-content">
+                    <p class="memory-date">Our First Night</p>
+                    <p class="memory-title">Intimate Beginning</p>
+                    <p class="memory-description">In privacy and respect, we began our physical journey. Tender, loving, and meaningful - this intimacy is not just physical but deeply spiritual, a blessing from Allah.</p>
+                </div>
+            </div>
+
+            <div class="memory-item">
+                <div class="memory-image">🌍</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Adventures</p>
+                    <p class="memory-title">Exploring Allah's Creation</p>
+                    <p class="memory-description">From mountains to seas, from cities to deserts - we explore this beautiful world together. Every sunset we watch becomes a moment of gratitude for having you by my side.</p>
+                </div>
+            </div>
+
+            <div class="memory-item">
+                <div class="memory-image">👨‍👩‍👧‍👦</div>
+                <div class="memory-content">
+                    <p class="memory-date">Future Dreams</p>
+                    <p class="memory-title">Building Our Legacy</p>
+                    <p class="memory-description">The children we'll raise, the home we'll build, the traditions we'll create - all infused with Islamic values and unconditional love. Our legacy will be our children and their children.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Forever Collecting Moments</p>
+        <p style="margin-top: 15px;">Every moment with you is a treasure</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-inspirations" class="story-section story-section--inspirations" aria-labelledby="chapter-inspirations">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 11</p>
+        <h2 id="chapter-inspirations" class="sr-only">Inspirations</h2>
+        <div class="chapter-shell">
+<div class="inspiration-hero">
+        <h1>Inspiration & Motivation</h1>
+        <p style="font-size: 1.2rem;">Words to lift our spirits and strengthen our resolve</p>
+    </div>
+
+    <div class="inspiration-container">
+
+        <div class="quote-card">
+            <div class="quote-content">
+                <p class="quote-text">The greatest glory in living lies not in never falling, but in rising every time we fall. In marriage, our glory is in choosing each other, every single day.</p>
+                <p class="quote-author">A reflection on commitment</p>
+            </div>
+        </div>
+
+        <div class="quote-card">
+            <div class="quote-content">
+                <p class="quote-text">Love is not about being happy all the time. It's about being committed, understanding, forgiving, and faithful even when things get difficult.</p>
+                <p class="quote-author">The essence of marriage</p>
+            </div>
+        </div>
+
+        <div class="quote-card">
+            <div class="quote-content">
+                <p class="quote-text">In every moment of doubt, remember: you were chosen. Out of all the souls in this world, we found each other. That's no coincidence - that's Allah's mercy.</p>
+                <p class="quote-author">A reminder of divine providence</p>
+            </div>
+        </div>
+
+        <div class="inspiration-section">
+            <h2>Daily Inspirations</h2>
+            <div class="inspiration-grid">
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">🌅</div>
+                    <h3>Each Morning</h3>
+                    <p>Wake grateful for another day to love you, to grow together, and to strengthen our bond in Allah's path.</p>
+                </div>
+
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">🕌</div>
+                    <h3>In Prayer</h3>
+                    <p>Pray for each other before you pray for yourselves. Your happiness is intertwined with their happiness.</p>
+                </div>
+
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">💬</div>
+                    <h3>In Communication</h3>
+                    <p>Listen more than you speak. Understand before being understood. Your attentive ear is an act of love.</p>
+                </div>
+
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">🤝</div>
+                    <h3>In Conflict</h3>
+                    <p>Choose resolution over being right. Choose your marriage over your ego. This is where true love is tested.</p>
+                </div>
+
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">💝</div>
+                    <h3>In Small Gestures</h3>
+                    <p>The small moments matter most - a smile, a touch, a kind word. These are the bricks of a strong marriage.</p>
+                </div>
+
+                <div class="inspiration-item">
+                    <div class="inspiration-icon">🌙</div>
+                    <h3>Each Night</h3>
+                    <p>Rest knowing you fought together that day to build something meaningful. Tomorrow you'll fight again - together.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reflection-box">
+            <h3>A Reflection on Our Journey</h3>
+            <p>
+                Marriage is not about finding the perfect person. It's about two imperfect people deciding that they're going to be perfect for each other. 
+                It's about choosing to see the best in one another, even when the world sees their flaws. It's about building something that's bigger than both of us.
+            </p>
+            <p>
+                In Islam, marriage is a sacred contract - a half of faith. This means that together, we complete something spiritually significant. 
+                Our marriage is not just about us - it's about fulfilling a commandment from Allah, raising the next generation, and being examples of mercy and kindness.
+            </p>
+            <p>
+                Every challenge we face together makes us stronger. Every moment of forgiveness brings us closer. Every act of kindness plants seeds for a thousand future moments of joy.
+            </p>
+        </div>
+
+        <div class="affirmation">
+            <p class="affirmation-text">We are enough. We are blessed. We are forever.</p>
+        </div>
+
+        <div class="quote-card">
+            <div class="quote-content">
+                <p class="quote-text">Two hearts, one faith, infinite love. This is what we're building. This is what we're creating. And this is what will last forever.</p>
+                <p class="quote-author">The promise we make to each other</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapter-footer">
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Inspired by love, guided by faith</p>
+        <p style="margin-top: 15px;">Forever motivated to be better together</p>
+    </div>
+        </div>
+      </section>
+
+      <section id="page-collection" class="story-section story-section--collection" aria-labelledby="chapter-collection">
+        <div class="chapter-marker" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="chapter-kicker">Chapter 12</p>
+        <h2 id="chapter-collection" class="sr-only">Collection</h2>
+        <div class="chapter-shell">
+<!-- Navigation -->
+    
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>For My Beloved</h1>
+        <p>A complete collection of promises, verses, letters, and inspirations crafted with love and faith for the one who holds my heart</p>
+        <button class="cta-button" data-scroll-to="page-journey">Explore Collection</button>
+    </div>
+
+    
+
+    
+
+    <!-- Footer -->
+    <div class="chapter-footer">
+        <div class="footer-content">
+            <div class="footer-title">For My Better Half</div>
+            <p class="footer-quote">
+                "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; 
+                and He has put between you affection and mercy." - Surah Ar-Rum 30:21
+            </p>
+            <div class="footer-links">
+                <a href="#page-journey">Home</a>
+                <a href="#page-promises">Promises</a>
+                <a href="#page-verses">Verses</a>
+                <a href="#page-duas">Duas</a>
+                <a href="#page-letters">Letters</a>
+                <a href="#page-gallery">Gallery</a>
+            </div>
+            <p style="color: var(--gold); font-weight: bold; margin-bottom: 20px;">
+                Created with love from your devoted husband
+            </p>
+            <p style="font-size: 0.9rem; color: #999;">
+                May Allah bless our union and grant us a beautiful marriage filled with love, mercy, and faith. Ameen.
+            </p>
+            <p style="margin-top: 30px; color: #999; font-size: 0.85rem;">
+                © 2026 Our Journey Together. All rights reserved.
+            </p>
+        </div>
+    </div>
+        </div>
+      </section>
+  </main>
+
+  <section id="first-year" class="milestone-section" aria-labelledby="milestone-title">
+    <div class="milestone-inner">
+      <p class="section-eyebrow">Since 23 November 2025</p>
+      <h2 id="milestone-title">Our First Year, Written in Moments</h2>
+      <div class="year-ring" id="year-ring" aria-hidden="true"><span></span></div>
+      <div class="time-counter" aria-label="Time since our first birthday year began">
+        <div><strong id="counter-days">0</strong><span>Days</span></div>
+        <div><strong id="counter-hours">0</strong><span>Hours</span></div>
+        <div><strong id="counter-minutes">0</strong><span>Minutes</span></div>
+      </div>
+      <p class="milestone-copy">Every ordinary day became precious because I lived it with you.</p>
+    </div>
+  </section>
+
+  <section id="cake-surprise" class="cake-surprise" aria-labelledby="cake-title">
+    <div id="cake-confetti" class="cake-confetti" aria-hidden="true"></div>
+    <div class="cake-inner">
+      <p class="section-eyebrow">One last little surprise</p>
+      <h2 id="cake-title">Make a Birthday Wish</h2>
+      <div class="cake-stage" aria-hidden="true">
+        <svg class="birthday-cake" viewBox="0 0 420 390">
+          <defs><linearGradient id="cakeIcing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8f0"/><stop offset="1" stop-color="#f8c8d8"/></linearGradient><linearGradient id="cakeBody" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d84d7c"/><stop offset="1" stop-color="#7d1648"/></linearGradient></defs>
+          <ellipse cx="210" cy="340" rx="158" ry="23" fill="#2b0920" opacity=".28"/>
+          <rect x="80" y="190" width="260" height="140" rx="30" fill="url(#cakeBody)" stroke="#e6c27a" stroke-width="4"/>
+          <path d="M82 220c34 30 48-25 78 2s52-25 82 1 54-24 96-3v-42H82v42Z" fill="url(#cakeIcing)"/>
+          <ellipse cx="210" cy="185" rx="130" ry="35" fill="#fff6ee" stroke="#e6c27a" stroke-width="4"/>
+          <g class="cake-candle cake-candle--one"><rect x="139" y="108" width="18" height="73" rx="8" fill="#f0bdca"/><path class="candle-flame" d="M148 103c-19-18 4-34 1-49 20 20 19 35-1 49Z" fill="#ffd270"/></g>
+          <g class="cake-candle cake-candle--two"><rect x="201" y="92" width="18" height="89" rx="8" fill="#e6c27a"/><path class="candle-flame" d="M210 87c-19-18 4-34 1-49 20 20 19 35-1 49Z" fill="#ffd270"/></g>
+          <g class="cake-candle cake-candle--three"><rect x="263" y="108" width="18" height="73" rx="8" fill="#f0bdca"/><path class="candle-flame" d="M272 103c-19-18 4-34 1-49 20 20 19 35-1 49Z" fill="#ffd270"/></g>
+          <g class="cake-smoke" fill="none" stroke="#fff6ee" stroke-width="4" stroke-linecap="round"><path d="M148 95c-18-18 18-23 0-44"/><path d="M210 80c-18-18 18-23 0-44"/><path d="M272 95c-18-18 18-23 0-44"/></g>
+          <path d="M135 270c45 30 105 30 150 0" fill="none" stroke="#e6c27a" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="157" cy="252" r="7" fill="#f8c8d8"/><circle cx="210" cy="266" r="7" fill="#f8c8d8"/><circle cx="263" cy="252" r="7" fill="#f8c8d8"/>
+        </svg>
+      </div>
+      <button id="make-wish" class="wish-button magnetic-button" type="button"><span>Make a wish</span></button>
+      <p id="final-birthday-message" class="final-birthday-message" aria-live="polite">Happy Birthday, my love. Forever yours, Usama.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="closing-dua">
+    <div class="footer-crescent" aria-hidden="true">☾</div>
+    <p class="footer-eyebrow">A prayer for the year ahead</p>
+    <p class="footer-arabic" lang="ar" dir="rtl">بَارَكَ اللَّهُ لَكِ فِي عُمْرِكِ وَمَلَأَ أَيَّامَكِ خَيْرًا وَسَكِينَةً</p>
+    <p class="footer-translation">May Allah bless your life and fill your days with goodness and tranquility.</p>
+    <div class="footer-rule" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+    <p class="footer-signoff">For my beloved wife Aiman — with love, gratitude, and dua.</p>
+    <p class="footer-date">23 November 2026 · Our First Year</p>
+    <p class="footer-from">From your husband, Usama</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to the top"><span aria-hidden="true">⌃</span></button>
+  <div id="cursor-trail" class="cursor-trail" aria-hidden="true"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

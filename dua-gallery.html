@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duas For Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --teal: #1b6b6a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .dua-hero {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dua-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .dua-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .dua-card {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--teal);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dua-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(27,107,106,0.03) 0%, transparent 100%);
+        }
+
+        .dua-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .dua-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .dua-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .dua-title {
+            color: var(--teal);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .dua-text {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            color: var(--dark-blue);
+            margin: 20px 0;
+            line-height: 1.8;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .dua-translation {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.7;
+            margin: 15px 0;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-style: italic;
+        }
+
+        .copy-btn {
+            background: var(--teal);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: var(--gold);
+            color: var(--dark-blue);
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .dua-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .dua-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .dua-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dua-hero" data-aos="fade-down">
+        <h1>Duas For Our Union</h1>
+        <p style="font-size: 1.2rem;">Sacred supplications for our marriage and future</p>
+    </div>
+
+    <div class="dua-gallery">
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="dua-card-content">
+                <div class="dua-icon">💍</div>
+                <p class="dua-title">For Our Marriage</p>
+                <p class="dua-text">اللهم ألّف بيننا كما ألفت بين السماء والأرض</p>
+                <p class="dua-translation">"O Allah, unite our hearts as You united the heavens and earth."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="dua-card-content">
+                <div class="dua-icon">❤️</div>
+                <p class="dua-title">For Mutual Love</p>
+                <p class="dua-text">اللهم ارزقنا حبا لا يزول ودودا بيننا لا ينقطع</p>
+                <p class="dua-translation">"O Allah, bless us with love that doesn't fade and affection that never ends."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="dua-card-content">
+                <div class="dua-icon">👶</div>
+                <p class="dua-title">For Righteous Children</p>
+                <p class="dua-text">رب اجعل لي ذرية طيبة إنك سميع الدعاء</p>
+                <p class="dua-translation">"My Lord, grant me righteous offspring. Indeed, You are the Hearer of supplication."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="dua-card-content">
+                <div class="dua-icon">🤝</div>
+                <p class="dua-title">For Understanding</p>
+                <p class="dua-text">اللهم ارزقنا الحكمة والعدل والفهم المتبادل</p>
+                <p class="dua-translation">"O Allah, grant us wisdom, justice, and mutual understanding."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="dua-card-content">
+                <div class="dua-icon">🕌</div>
+                <p class="dua-title">For a Righteous Home</p>
+                <p class="dua-text">اللهم اجعل بيتنا بيت قرآن وذكر وطاعة</p>
+                <p class="dua-translation">"O Allah, make our home a house of Quran, remembrance, and obedience."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="dua-card-content">
+                <div class="dua-icon">🌙</div>
+                <p class="dua-title">For Guidance</p>
+                <p class="dua-text">اللهم اهدنا الصراط المستقيم بأنوار حبك وتقواك</p>
+                <p class="dua-translation">"O Allah, guide us on the straight path with the light of Your love and fear."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="700">
+            <div class="dua-card-content">
+                <div class="dua-icon">🌸</div>
+                <p class="dua-title">For Compassion</p>
+                <p class="dua-text">اللهم اجعلنا من الرحماء الرحيمين مع بعضنا البعض</p>
+                <p class="dua-translation">"O Allah, make us merciful and compassionate with each other."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="800">
+            <div class="dua-card-content">
+                <div class="dua-icon">✨</div>
+                <p class="dua-title">For Paradise Together</p>
+                <p class="dua-text">اللهم أدخلنا الجنة مع أحبابنا وارزقنا برفقة</p>
+                <p class="dua-translation">"O Allah, enter us into Paradise together and bless us with your companionship."</p>
+            </div>
+        </div>
+
+        <div class="dua-card" data-aos="zoom-in" data-aos-delay="900">
+            <div class="dua-card-content">
+                <div class="dua-icon">🤲</div>
+                <p class="dua-title">For Forgiveness</p>
+                <p class="dua-text">اللهم اغفر لنا ذنوبنا وتقبل منا أعمالنا</p>
+                <p class="dua-translation">"O Allah, forgive us our sins and accept our deeds."</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Ameen Ya Rabb</p>
+        <p style="margin-top: 15px;">May Allah bless our union and grant us a blessed marriage</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

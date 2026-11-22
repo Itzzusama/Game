@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memory Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --rose: #d4657f;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .gallery-hero {
+            background: linear-gradient(135deg, var(--rose) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .gallery-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .photo-frame {
+            position: relative;
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-frame:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(212,101,127,0.2);
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c4 100%);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: rgba(212,101,127,0.3);
+        }
+
+        .photo-caption {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .memory-timeline {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 50px 0;
+        }
+
+        .memory-timeline h2 {
+            color: var(--rose);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .memory-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        .memory-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .memory-image {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c4 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            flex-shrink: 0;
+        }
+
+        .memory-content {
+            flex: 1;
+        }
+
+        .memory-date {
+            color: var(--rose);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .memory-title {
+            color: var(--dark-blue);
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .memory-description {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .collection-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, var(--rose) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--gold);
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .memory-item {
+                flex-direction: column !important;
+            }
+
+            .memory-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+            }
+
+            .memory-timeline {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-hero" data-aos="fade-down">
+        <h1>Our Gallery</h1>
+        <p style="font-size: 1.2rem;">Memories captured, moments cherished</p>
+    </div>
+
+    <div class="gallery-container">
+
+        <h2 style="text-align: center; color: var(--rose); font-size: 2rem; margin: 40px 0 30px;">Photo Collection</h2>
+        
+        <div class="photo-grid">
+            <div class="photo-frame" data-aos="zoom-in" data-aos-delay="100">
+                <div class="photo-placeholder">📷</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="photo-placeholder">💍</div>
+                </div>
+                <p class="photo-caption">The Engagement</p>
+            </div>
+
+            <div class="photo-frame" data-aos="zoom-in" data-aos-delay="200">
+                <div class="photo-placeholder">💒</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="photo-placeholder">👰🤵</div>
+                </div>
+                <p class="photo-caption">Our Wedding</p>
+            </div>
+
+            <div class="photo-frame" data-aos="zoom-in" data-aos-delay="300">
+                <div class="photo-placeholder">❤️</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="photo-placeholder">✈️</div>
+                </div>
+                <p class="photo-caption">Adventures</p>
+            </div>
+
+            <div class="photo-frame" data-aos="zoom-in" data-aos-delay="400">
+                <div class="photo-placeholder">🏡</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="photo-frame" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="photo-placeholder">👨‍👩‍👧‍👦</div>
+                </div>
+                <p class="photo-caption">Our Family</p>
+            </div>
+        </div>
+
+        <div class="collection-stats">
+            <div class="stat-box" data-aos="fade-up">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Moments Together</div>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Hearts United</div>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Soul</div>
+            </div>
+        </div>
+
+        <div class="memory-timeline" data-aos="fade-up">
+            <h2>Beautiful Memories</h2>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="memory-image">💝</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Beginning</p>
+                    <p class="memory-title">When Our Hearts First Met</p>
+                    <p class="memory-description">The moment you came into my life, everything changed. Suddenly, I understood what all the poets were writing about. You became my inspiration, my prayer, and my greatest blessing.</p>
+                </div>
+            </div>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="memory-image">✨</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Proposal</p>
+                    <p class="memory-title">When I Asked Forever</p>
+                    <p class="memory-description">With trembling hands and a hopeful heart, I asked you to be my wife, my partner, my reason for striving towards Jannah. Your yes was the sweetest word I've ever heard.</p>
+                </div>
+            </div>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="memory-image">💍</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Nikkah</p>
+                    <p class="memory-title">The Day We Became One</p>
+                    <p class="memory-description">Standing before Allah and witnesses, we took our vows. In that sacred moment, two souls became partners for life. Every tear shed was a promise made in His presence.</p>
+                </div>
+            </div>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="memory-image">🌙</div>
+                <div class="memory-content">
+                    <p class="memory-date">Our First Night</p>
+                    <p class="memory-title">Intimate Beginning</p>
+                    <p class="memory-description">In privacy and respect, we began our physical journey. Tender, loving, and meaningful - this intimacy is not just physical but deeply spiritual, a blessing from Allah.</p>
+                </div>
+            </div>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="memory-image">🌍</div>
+                <div class="memory-content">
+                    <p class="memory-date">The Adventures</p>
+                    <p class="memory-title">Exploring Allah's Creation</p>
+                    <p class="memory-description">From mountains to seas, from cities to deserts - we explore this beautiful world together. Every sunset we watch becomes a moment of gratitude for having you by my side.</p>
+                </div>
+            </div>
+
+            <div class="memory-item" data-aos="zoom-in" data-aos-delay="600">
+                <div class="memory-image">👨‍👩‍👧‍👦</div>
+                <div class="memory-content">
+                    <p class="memory-date">Future Dreams</p>
+                    <p class="memory-title">Building Our Legacy</p>
+                    <p class="memory-description">The children we'll raise, the home we'll build, the traditions we'll create - all infused with Islamic values and unconditional love. Our legacy will be our children and their children.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Forever Collecting Moments</p>
+        <p style="margin-top: 15px;">Every moment with you is a treasure</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

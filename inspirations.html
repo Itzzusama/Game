@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration & Motivation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --amber: #f59e0b;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .inspiration-hero {
+            background: linear-gradient(135deg, var(--amber) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .inspiration-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .inspiration-container {
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .quote-card {
+            background: white;
+            padding: 50px 40px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-right: 5px solid var(--amber);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .quote-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(245,158,11,0.2);
+        }
+
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .quote-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            color: var(--dark-blue);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .quote-author {
+            color: var(--amber);
+            font-weight: bold;
+            text-align: right;
+            font-size: 1rem;
+        }
+
+        .inspiration-section {
+            background: linear-gradient(135deg, var(--amber) 0%, #fbbf24 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .inspiration-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .inspiration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .inspiration-item {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .inspiration-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+
+        .inspiration-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .inspiration-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .inspiration-item p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .reflection-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 6px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .reflection-box h3 {
+            color: var(--amber);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .reflection-box p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        .affirmation {
+            background: linear-gradient(135deg, #fef3c7 0%, #fff7ed 100%);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            border-top: 3px solid var(--amber);
+        }
+
+        .affirmation-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: var(--dark-blue);
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .inspiration-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .quote-card {
+                padding: 30px 25px;
+            }
+
+            .inspiration-section {
+                padding: 40px 20px;
+            }
+
+            .reflection-box {
+                padding: 25px;
+            }
+
+            .affirmation-text {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="inspiration-hero" data-aos="fade-down">
+        <h1>Inspiration & Motivation</h1>
+        <p style="font-size: 1.2rem;">Words to lift our spirits and strengthen our resolve</p>
+    </div>
+
+    <div class="inspiration-container">
+
+        <div class="quote-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="quote-content">
+                <p class="quote-text">The greatest glory in living lies not in never falling, but in rising every time we fall. In marriage, our glory is in choosing each other, every single day.</p>
+                <p class="quote-author">A reflection on commitment</p>
+            </div>
+        </div>
+
+        <div class="quote-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="quote-content">
+                <p class="quote-text">Love is not about being happy all the time. It's about being committed, understanding, forgiving, and faithful even when things get difficult.</p>
+                <p class="quote-author">The essence of marriage</p>
+            </div>
+        </div>
+
+        <div class="quote-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="quote-content">
+                <p class="quote-text">In every moment of doubt, remember: you were chosen. Out of all the souls in this world, we found each other. That's no coincidence - that's Allah's mercy.</p>
+                <p class="quote-author">A reminder of divine providence</p>
+            </div>
+        </div>
+
+        <div class="inspiration-section" data-aos="fade-up">
+            <h2>Daily Inspirations</h2>
+            <div class="inspiration-grid">
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="inspiration-icon">🌅</div>
+                    <h3>Each Morning</h3>
+                    <p>Wake grateful for another day to love you, to grow together, and to strengthen our bond in Allah's path.</p>
+                </div>
+
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="inspiration-icon">🕌</div>
+                    <h3>In Prayer</h3>
+                    <p>Pray for each other before you pray for yourselves. Your happiness is intertwined with their happiness.</p>
+                </div>
+
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="inspiration-icon">💬</div>
+                    <h3>In Communication</h3>
+                    <p>Listen more than you speak. Understand before being understood. Your attentive ear is an act of love.</p>
+                </div>
+
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="inspiration-icon">🤝</div>
+                    <h3>In Conflict</h3>
+                    <p>Choose resolution over being right. Choose your marriage over your ego. This is where true love is tested.</p>
+                </div>
+
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="inspiration-icon">💝</div>
+                    <h3>In Small Gestures</h3>
+                    <p>The small moments matter most - a smile, a touch, a kind word. These are the bricks of a strong marriage.</p>
+                </div>
+
+                <div class="inspiration-item" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="inspiration-icon">🌙</div>
+                    <h3>Each Night</h3>
+                    <p>Rest knowing you fought together that day to build something meaningful. Tomorrow you'll fight again - together.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reflection-box" data-aos="fade-up">
+            <h3>A Reflection on Our Journey</h3>
+            <p>
+                Marriage is not about finding the perfect person. It's about two imperfect people deciding that they're going to be perfect for each other. 
+                It's about choosing to see the best in one another, even when the world sees their flaws. It's about building something that's bigger than both of us.
+            </p>
+            <p>
+                In Islam, marriage is a sacred contract - a half of faith. This means that together, we complete something spiritually significant. 
+                Our marriage is not just about us - it's about fulfilling a commandment from Allah, raising the next generation, and being examples of mercy and kindness.
+            </p>
+            <p>
+                Every challenge we face together makes us stronger. Every moment of forgiveness brings us closer. Every act of kindness plants seeds for a thousand future moments of joy.
+            </p>
+        </div>
+
+        <div class="affirmation" data-aos="zoom-in">
+            <p class="affirmation-text">We are enough. We are blessed. We are forever.</p>
+        </div>
+
+        <div class="quote-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="quote-content">
+                <p class="quote-text">Two hearts, one faith, infinite love. This is what we're building. This is what we're creating. And this is what will last forever.</p>
+                <p class="quote-author">The promise we make to each other</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Inspired by love, guided by faith</p>
+        <p style="margin-top: 15px;">Forever motivated to be better together</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Promises To You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --rose: #d4657f;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .promises-header {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--rose) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .promises-header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .promises-header p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .promises-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .promise-card {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-left: 6px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .promise-card:hover {
+            transform: translateX(10px);
+        }
+
+        .promise-card h3 {
+            color: var(--rose);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .promise-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .promise-number {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark-blue);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .promises-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .promise-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promises-header" data-aos="fade-down">
+        <h1>My Promises To You</h1>
+        <p>A vow to love, honor, and cherish you in the way of Islam</p>
+    </div>
+
+    <div class="promises-container">
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="promise-number">1</div>
+            <h3>To Lead with Kindness</h3>
+            <p>I promise to be your protector and guide, following the example of Prophet Muhammad (PBUH). As the Quran says: "The best of you are those who are best to their families" - I will treat you with utmost compassion and respect.</p>
+        </div>
+
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="promise-number">2</div>
+            <h3>To Honor Your Worth</h3>
+            <p>You are my equal in dignity and worth. I promise to listen to you, value your opinions, and make decisions together. In Islam, a wife is a queen in her home, and I will ensure you feel that honor every single day.</p>
+        </div>
+
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="promise-number">3</div>
+            <h3>To Strengthen Our Faith</h3>
+            <p>I promise to walk with you towards Allah. We will pray together, learn the Quran together, and raise a family rooted in Islamic values. "O Allah, grant me love for her as you have given me love for my own self."</p>
+        </div>
+
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="promise-number">4</div>
+            <h3>To Provide and Protect</h3>
+            <p>I promise to work hard to provide for our family with halal income. Your comfort and security are my responsibility, not as a burden, but as a privilege and duty I carry with pride.</p>
+        </div>
+
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="promise-number">5</div>
+            <h3>To Forgive and Seek Forgiveness</h3>
+            <p>I promise that when we have disagreements, I will forgive quickly and ask for forgiveness sincerely. The Prophet (PBUH) said: "Does one of you beat his wife like a beat a slave, and then embrace her?"- I will always choose gentleness.</p>
+        </div>
+
+        <div class="promise-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="promise-number">6</div>
+            <h3>To Be Your Best Friend</h3>
+            <p>Beyond being your husband, I want to be your closest confidant and best friend. Someone you can laugh with, cry with, and share your deepest dreams and fears with, always.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Forever Yours in Allah's Path</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

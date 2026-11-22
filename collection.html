@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved - Complete Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --primary: #d4657f;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-blue);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: var(--gold);
+            color: var(--dark-blue);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(212,175,55,0.3);
+        }
+
+        /* Collection Grid */
+        .collection {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .collection h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .page-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            border-top: 5px solid var(--primary);
+            cursor: pointer;
+        }
+
+        .page-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(212,101,127,0.2);
+        }
+
+        .page-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .page-description {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .page-link {
+            color: var(--primary);
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .page-link:hover {
+            color: var(--gold);
+        }
+
+        /* Features Section */
+        .features {
+            background: linear-gradient(135deg, #f5e6d3 0%, white 100%);
+            padding: 60px 20px;
+            margin: 60px 0;
+        }
+
+        .features-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            color: var(--dark-blue);
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .feature-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-quote {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            .collection h2 {
+                font-size: 2rem;
+            }
+
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home" data-aos="fade-down">
+        <h1>For My Beloved</h1>
+        <p>A complete collection of promises, verses, letters, and inspirations crafted with love and faith for the one who holds my heart</p>
+        <button class="cta-button" onclick="document.getElementById('collection').scrollIntoView({behavior: 'smooth'})">Explore Collection</button>
+    </div>
+
+    <!-- Main Collection -->
+    <div class="collection" id="collection">
+        <h2>Our Sacred Collection</h2>
+        
+        <div class="page-grid">
+
+            <a href="index.html" class="page-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="page-icon">🌹</div>
+                <div class="page-title">Our Journey Begins</div>
+                <p class="page-description">The opening of our story - a heartfelt introduction to our future together filled with Quranic verses and divine promises.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="promises.html" class="page-card" data-aos="zoom-in" data-aos-delay="150">
+                <div class="page-icon">💍</div>
+                <div class="page-title">My Promises To You</div>
+                <p class="page-description">Six sacred promises I make to you - to lead with kindness, honor your worth, strengthen our faith, provide and protect, forgive and seek forgiveness, and be your best friend.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="quranic-verses.html" class="page-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="page-icon">📖</div>
+                <div class="page-title">Quranic Verses</div>
+                <p class="page-description">Five beautiful verses from the Quran that define marriage, love, and partnership in Islam with deep meanings explained.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="hadith-collection.html" class="page-card" data-aos="zoom-in" data-aos-delay="250">
+                <div class="page-icon">✨</div>
+                <div class="page-title">Hadith Collection</div>
+                <p class="page-description">Wisdom from the Prophet Muhammad (PBUH) about marriage, love, gentleness, and how to treat your spouse with kindness and respect.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="love-letters.html" class="page-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="page-icon">💌</div>
+                <div class="page-title">Love Letters</div>
+                <p class="page-description">Four heartfelt letters from my heart to yours - from the beginning, for our wedding day, on hard days, and for our future children.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="dua-gallery.html" class="page-card" data-aos="zoom-in" data-aos-delay="350">
+                <div class="page-icon">🤲</div>
+                <div class="page-title">Duas For Us</div>
+                <p class="page-description">Nine sacred supplications for our marriage, love, children, guidance, understanding, compassion, and journey to Paradise together.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="timeline.html" class="page-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="page-icon">⏰</div>
+                <div class="page-title">Our Timeline</div>
+                <p class="page-description">From our Nikkah through building our nest, adventures, children, growing old together, and finally meeting in Jannah.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="qualities.html" class="page-card" data-aos="zoom-in" data-aos-delay="450">
+                <div class="page-icon">💫</div>
+                <div class="page-title">Why I Love You</div>
+                <p class="page-description">Nine reasons my heart chose you - from your faith and kindness to your smile, intellect, strength, creativity, empathy, and beautiful heart.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="rights-duties.html" class="page-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="page-icon">⚖️</div>
+                <div class="page-title">Rights & Duties</div>
+                <p class="page-description">Understanding our Islamic roles and responsibilities to each other with a comparative table showing the beautiful balance in marriage.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="gallery.html" class="page-card" data-aos="zoom-in" data-aos-delay="550">
+                <div class="page-icon">🎨</div>
+                <div class="page-title">Our Gallery</div>
+                <p class="page-description">A visual memory timeline of moments together - from our first meeting through adventures, wedding, and our beautiful journey ahead.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+            <a href="inspirations.html" class="page-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="page-icon">🌟</div>
+                <div class="page-title">Inspirations</div>
+                <p class="page-description">Uplifting quotes, daily inspirations, reflections on our journey, and affirmations to keep our love strong through all seasons.</p>
+                <span class="page-link">View →</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features" id="features">
+        <div class="features-container">
+            <h2>What You'll Experience</h2>
+            <div class="features-grid">
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-title">Smooth Animations</div>
+                    <div class="feature-text">Every page features beautiful scroll animations and transitions that bring the content to life as you explore.</div>
+                </div>
+
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🕌</div>
+                    <div class="feature-title">Islamic Content</div>
+                    <div class="feature-text">All pages include authentic Quranic verses, Hadiths, and Islamic teachings about marriage and love.</div>
+                </div>
+
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">💍</div>
+                    <div class="feature-title">Personal Touch</div>
+                    <div class="feature-text">Customized promises, letters, and reflections crafted specifically for your beloved spouse.</div>
+                </div>
+
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-title">Responsive Design</div>
+                    <div class="feature-text">All pages are optimized for mobile, tablet, and desktop viewing for a perfect experience anywhere.</div>
+                </div>
+
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">Beautiful Design</div>
+                    <div class="feature-text">Elegant color schemes, elegant typography, and carefully crafted layouts that celebrate your love.</div>
+                </div>
+
+                <div class="feature-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">🌙</div>
+                    <div class="feature-title">Motion & Movement</div>
+                    <div class="feature-text">From fade-up animations to hover effects, every element moves with purpose and grace.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" data-aos="fade-up">
+        <div class="footer-content">
+            <div class="footer-title">For My Better Half</div>
+            <p class="footer-quote">
+                "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; 
+                and He has put between you affection and mercy." - Surah Ar-Rum 30:21
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="promises.html">Promises</a>
+                <a href="quranic-verses.html">Verses</a>
+                <a href="dua-gallery.html">Duas</a>
+                <a href="love-letters.html">Letters</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <p style="color: var(--gold); font-weight: bold; margin-bottom: 20px;">
+                Created with love from your devoted husband
+            </p>
+            <p style="font-size: 0.9rem; color: #999;">
+                May Allah bless our union and grant us a beautiful marriage filled with love, mercy, and faith. Ameen.
+            </p>
+            <p style="margin-top: 30px; color: #999; font-size: 0.85rem;">
+                © 2026 Our Journey Together. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ 
+            duration: 1200, 
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scrolling for page links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

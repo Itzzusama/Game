@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --pink: #d4657f;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .letters-hero {
+            background: linear-gradient(135deg, var(--pink) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .letters-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .letters-container {
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .letter {
+            background: white;
+            padding: 60px 40px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            position: relative;
+            font-family: 'Georgia', serif;
+            border-top: 3px solid var(--pink);
+        }
+
+        .letter::before {
+            content: '💌';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 3rem;
+            opacity: 0.3;
+        }
+
+        .letter-date {
+            color: var(--pink);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .letter-content {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        .letter-closing {
+            margin-top: 40px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: var(--pink);
+        }
+
+        .letter-signature {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #999;
+        }
+
+        .dua-box {
+            background: #fff8f3;
+            border-left: 4px solid var(--gold);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .dua-box p {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            color: var(--dark-blue);
+            text-align: center;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .dua-translation {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            background: var(--dark-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: var(--pink);
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background: var(--gold);
+            color: var(--dark-blue);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .letters-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .letter {
+                padding: 30px 20px;
+            }
+
+            .tab-buttons {
+                gap: 10px;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letters-hero" data-aos="fade-down">
+        <h1>Letters From My Heart</h1>
+        <p style="font-size: 1.2rem;">Words that only you can understand</p>
+    </div>
+
+    <div class="letters-container">
+
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchTab('letter1')">Birthday I</button>
+            <button class="tab-btn" onclick="switchTab('letter2')">Birthday II</button>
+            <button class="tab-btn" onclick="switchTab('letter3')">Letter 3</button>
+            <button class="tab-btn" onclick="switchTab('letter4')">Letter 4</button>
+            <button class="tab-btn" onclick="switchTab('letter5')">Letter 5</button>
+            <button class="tab-btn" onclick="switchTab('letter6')">Letter 6</button>
+        </div>
+
+        <!-- Birthday Letter 1 -->
+        <div id="letter1" class="tab-content active" data-aos="fade-up">
+            <div class="letter birthday-letter">
+                <p class="letter-date">For Your Birthday · 23 November 2026</p>
+                <p class="letter-content">
+                    To My Beautiful Beloved Wife Aiman,
+                </p>
+                <p class="letter-content">
+                    Today is a celebration of the beautiful soul Allah placed in my life. Your smile brings warmth to our home, your kindness makes ordinary days precious, and your presence is one of the greatest blessings for which I thank Allah.
+                </p>
+                <p class="letter-content">
+                    On your birthday, I do not only wish you happiness for one day. I pray for a whole year filled with barakah, strong faith, good health, peaceful mornings, accepted duas, and countless reasons for your heart to smile. May every new chapter bring you closer to Allah and surround you with His mercy.
+                </p>
+                <p class="letter-content">
+                    Aiman, you are my companion, my comfort, and my answered prayer. I am grateful that I can celebrate this beautiful day beside you as your husband.
+                </p>
+                <div class="dua-box">
+                    <p>اللهم بارك لها في عمرها وصحتها وإيمانها، واجعل عامها الجديد عام خير وبركة وسعادة</p>
+                    <p class="dua-translation">“O Allah, bless her life, health, and faith, and make her new year a year of goodness, barakah, and happiness.”</p>
+                </div>
+                <div class="dua-box">
+                    <p>اللهم احفظ زوجتي أيمن بعينك التي لا تنام، وألبسها لباس الصحة والعافية والسكينة</p>
+                    <p class="dua-translation">“O Allah, protect my wife Aiman with Your never-sleeping care, and clothe her in health, well-being, and tranquility.”</p>
+                </div>
+                <div class="dua-box">
+                    <p>رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+                    <p class="dua-translation">“Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us an example for the righteous.” — Quran 25:74</p>
+                </div>
+                <p class="letter-closing">Happy Birthday, My Beloved Wife</p>
+                <p class="letter-signature">Your Husband, Usama</p>
+            </div>
+        </div>
+
+        <!-- Birthday Letter 2 -->
+        <div id="letter2" class="tab-content" data-aos="fade-up">
+            <div class="letter birthday-letter">
+                <p class="letter-date">Our First Year · A Birthday Promise</p>
+                <p class="letter-content">
+                    My Dearest Aiman,
+                </p>
+                <p class="letter-content">
+                    This birthday feels even more special because it belongs to our first year together. Every shared prayer, every quiet conversation, every laugh, and every little moment has become part of a story I want to cherish for the rest of my life.
+                </p>
+                <p class="letter-content">
+                    I pray that I always become a source of peace for you, that I protect your heart with gentleness, and that our home remains filled with faith, mercy, respect, and laughter. Through every season, I want to keep choosing you, supporting you, and walking beside you towards Jannah.
+                </p>
+                <p class="letter-content">
+                    May your dreams unfold beautifully, may your worries become lighter, and may Allah place ease in every path you take. Thank you for being Aiman — the woman whose happiness matters so deeply to me.
+                </p>
+                <div class="dua-box">
+                    <p>اللهم زد بيننا مودة ورحمة، وألّف بين قلوبنا، وبارك لنا في أيامنا القادمة</p>
+                    <p class="dua-translation">“O Allah, increase love and mercy between us, unite our hearts, and bless all the days ahead of us.”</p>
+                </div>
+                <div class="dua-box">
+                    <p>اللهم اجعل أيامها نورًا وفرحًا، وحقق لها ما تتمنى إن كان فيه خير لها</p>
+                    <p class="dua-translation">“O Allah, fill her days with light and joy, and grant her wishes whenever they are good for her.”</p>
+                </div>
+                <div class="dua-box">
+                    <p>اللهم ارزقها قلبًا مطمئنًا، ودعاءً مستجابًا، ورزقًا واسعًا، وحياةً مليئةً برضاك</p>
+                    <p class="dua-translation">“O Allah, grant her a peaceful heart, accepted prayers, abundant provision, and a life filled with Your pleasure.”</p>
+                </div>
+                <div class="dua-box">
+                    <p>اللهم اجمعنا في الفردوس الأعلى كما جمعتنا بالمودة والرحمة في الدنيا</p>
+                    <p class="dua-translation">“O Allah, reunite us in the highest level of Paradise, just as You united us with love and mercy in this world.”</p>
+                </div>
+                <p class="letter-closing">With Every Dua and All My Love</p>
+                <p class="letter-signature">Forever Yours, Usama</p>
+            </div>
+        </div>
+
+        <!-- Letter 3 -->
+        <div id="letter3" class="tab-content" data-aos="fade-up">
+            <div class="letter">
+                <p class="letter-date">January 2026</p>
+                <p class="letter-content">
+                    My Beloved,
+                </p>
+                <p class="letter-content">
+                    As I sit and write these words, my heart races thinking about the day you'll read them. Every moment I'm waiting for you, I find myself smiling without reason - thinking of your laugh, your kindness, your patience.
+                </p>
+                <p class="letter-content">
+                    You are the answer to prayers I made in the silence of the night, when I thought no one was listening. But Allah heard me, and sent you. You are His gift to me, wrapped in mercy and compassion.
+                </p>
+                <div class="dua-box">
+                    <p>اللهم يا مقلب القلوب ثبت قلبي على دينك</p>
+                    <p class="dua-translation">"O Allah, O Turner of hearts, make my heart firm upon Your religion"</p>
+                </div>
+                <p class="letter-content">
+                    With all my love and devotion,
+                </p>
+                <p class="letter-closing">Your Husband</p>
+                <p class="letter-signature">Forever Yours</p>
+            </div>
+        </div>
+
+        <!-- Letter 4 -->
+        <div id="letter4" class="tab-content" data-aos="fade-up">
+            <div class="letter">
+                <p class="letter-date">For Our Wedding Day</p>
+                <p class="letter-content">
+                    To My Beautiful Bride,
+                </p>
+                <p class="letter-content">
+                    Today, I become your husband. Today, I take on the most important responsibility of my life - to care for you, to honor you, and to walk with you towards Allah's pleasure.
+                </p>
+                <p class="letter-content">
+                    I promise to be your shelter in the storm, your companion in joy, and your support in sorrow. With this Nikkah, I'm not just gaining a wife - I'm gaining my better half, my mirror, my peace.
+                </p>
+                <p class="letter-content">
+                    Every day with you will be my journey to Jannah. I will strive to be worthy of your trust, your love, and your sacrifice.
+                </p>
+                <div class="dua-box">
+                    <p>اللهم بارك لنا فيما أعطيتنا وقنا عذاب النار</p>
+                    <p class="dua-translation">"O Allah, bless us in what you've given us and protect us from the punishment of Hellfire"</p>
+                </div>
+                <p class="letter-closing">With Infinite Love</p>
+                <p class="letter-signature">Your Forever Husband</p>
+            </div>
+        </div>
+
+        <!-- Letter 5 -->
+        <div id="letter5" class="tab-content" data-aos="fade-up">
+            <div class="letter">
+                <p class="letter-date">On Hard Days</p>
+                <p class="letter-content">
+                    My Dearest,
+                </p>
+                <p class="letter-content">
+                    When life gets hard and challenges come, know that I'm here for you. Our marriage is not just for the happy days - it's a bond for every season of life.
+                </p>
+                <p class="letter-content">
+                    I won't always have the perfect words, but I will always have my arms open for you. We'll face every storm together, and Allah will help us through.
+                </p>
+                <p class="letter-content">
+                    You are my strength when I'm weak. You are my hope when I'm lost. Together, with Allah's help, we can overcome anything.
+                </p>
+                <div class="dua-box">
+                    <p>ربنا آتنا من لدنك رحمة وهيئ لنا من أمرنا رشدا</p>
+                    <p class="dua-translation">"Our Lord, grant us mercy from You and prepare for us from our affair right guidance"</p>
+                </div>
+                <p class="letter-closing">Always By Your Side</p>
+                <p class="letter-signature">Your Loving Husband</p>
+            </div>
+        </div>
+
+        <!-- Letter 6 -->
+        <div id="letter6" class="tab-content" data-aos="fade-up">
+            <div class="letter">
+                <p class="letter-date">For Our Children</p>
+                <p class="letter-content">
+                    To My Queen,
+                </p>
+                <p class="letter-content">
+                    When we hold our children for the first time, I want them to see the love between us. I want them to grow up knowing what it means to have parents who love each other and love Allah.
+                </p>
+                <p class="letter-content">
+                    You will be the greatest teacher they ever have. I will stand with you every step of the way. Together, we'll raise a generation that brings honor to Islam and joy to the Ummah.
+                </p>
+                <p class="letter-content">
+                    Our love is not just ours - it's a blessing that will flow through generations. Thank you for being my partner in this sacred mission.
+                </p>
+                <div class="dua-box">
+                    <p>رب اجعل لي ذرية طيبة إنك سميع الدعاء</p>
+                    <p class="dua-translation">"My Lord, grant me righteous offspring. Indeed, You are the Hearer of supplication"</p>
+                </div>
+                <p class="letter-closing">Your Devoted Husband & Father</p>
+                <p class="letter-signature">Forever Grateful</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Love Eternal in Allah's Path</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+
+        function switchTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Remove active class from buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

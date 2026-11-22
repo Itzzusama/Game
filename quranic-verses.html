@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quranic Verses For Our Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --green: #2d5016;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .verses-hero {
+            background: linear-gradient(135deg, var(--green) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .verses-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .verses-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .verse-box {
+            background: white;
+            padding: 50px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--green);
+            position: relative;
+        }
+
+        .verse-box::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+        }
+
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin: 30px 0;
+            line-height: 2;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .english-translation {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            margin: 25px 0;
+            font-style: italic;
+            border-left: 4px solid var(--gold);
+            padding-left: 20px;
+        }
+
+        .verse-reference {
+            color: var(--gold);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.95rem;
+        }
+
+        .verse-meaning {
+            background: #f9f6f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .verses-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .arabic-text {
+                font-size: 1.5rem;
+            }
+
+            .verse-box {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="verses-hero" data-aos="fade-down">
+        <h1>Quranic Verses For Our Journey</h1>
+        <p style="font-size: 1.2rem;">Words of Allah that guide our hearts and unite our souls</p>
+    </div>
+
+    <div class="verses-container">
+        
+        <div class="verse-box" data-aos="zoom-in" data-aos-delay="100">
+            <p class="arabic-text">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+            <p class="english-translation">"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He has put between you affection and mercy."</p>
+            <p class="verse-reference">Surah Ar-Rum 30:21</p>
+            <div class="verse-meaning">This verse beautifully describes marriage in Islam - it's not just a contract, but a sign of Allah's creation based on tranquility (Sakina), affection (Mawaddah), and mercy (Rahmah).</div>
+        </div>
+
+        <div class="verse-box" data-aos="zoom-in" data-aos-delay="200">
+            <p class="arabic-text">هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ</p>
+            <p class="english-translation">"They are clothing for you and you are clothing for them."</p>
+            <p class="verse-reference">Surah Al-Baqarah 2:187</p>
+            <div class="verse-meaning">This verse uses the metaphor of clothing to show how spouses protect, cover, and care for each other - complete intimacy, comfort, and trust.</div>
+        </div>
+
+        <div class="verse-box" data-aos="zoom-in" data-aos-delay="300">
+            <p class="arabic-text">الرِّجَالُ قَوَّامُونَ عَلَى النِّسَاءِ بِمَا فَضَّلَ اللَّهُ بَعْضَهُمْ عَلَىٰ بَعْضٍ وَبِمَا أَنفَقُوا مِنْ أَمْوَالِهِمْ</p>
+            <p class="english-translation">"Men are caretakers of women by [right of] what Allah has given one over the other and what they spend [for maintenance] from their wealth."</p>
+            <p class="verse-reference">Surah An-Nisa 4:34</p>
+            <div class="verse-meaning">This doesn't mean dominance, but rather responsibility and care. A husband's role is to provide, protect, and be merciful - a sacred trust from Allah.</div>
+        </div>
+
+        <div class="verse-box" data-aos="zoom-in" data-aos-delay="400">
+            <p class="arabic-text">وَاللَّاتِي يَأْتِينَ الْفَاحِشَةَ مِن نِّسَائِكُمْ فَاسْتَشْهِدُوا عَلَيْهِنَّ أَرْبَعَةً مِّنكُمْ ۖ فَإِن شَهِدُوا فَأَمْسِكُوهُنَّ فِي الْبُيُوتِ حَتَّىٰ يَتَوَفَّاهُنَّ الْمَوْتُ أَوْ يَجْعَلَ اللَّهُ لَهُنَّ سَبِيلًا</p>
+            <p class="english-translation">"And live with them in kindness. For if you dislike them - perhaps you dislike a thing and Allah brings forth a great deal of good through it."</p>
+            <p class="verse-reference">Surah An-Nisa 4:19</p>
+            <div class="verse-meaning">Even when there are challenges in marriage, we're commanded to treat our spouses with kindness, as Allah may bring goodness through our patience.</div>
+        </div>
+
+        <div class="verse-box" data-aos="zoom-in" data-aos-delay="500">
+            <p class="arabic-text">وَتُؤْتُونَ أَحَدَهُنَّ قِنطَارًا فَلَا تَأْخُذُوا مِنْهُ شَيْئًا</p>
+            <p class="english-translation">"And give the women [upon marriage] their [bridal] gift as an obligation."</p>
+            <p class="verse-reference">Surah An-Nisa 4:4</p>
+            <div class="verse-meaning">The Mahr (gift) is a sign of respect, honor, and commitment - a tangible expression of the groom's sincerity in the marriage.</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-family: 'Amiri', serif; font-size: 1.3rem;">وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَنُدْخِلُهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ</p>
+        <p style="margin-top: 15px;">May Allah unite our hearts in His path, Ameen</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>

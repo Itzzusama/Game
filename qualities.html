@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-blue: #0f172a;
+            --cream: #fdfbf7;
+            --coral: #ff6b6b;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .qualities-hero {
+            background: linear-gradient(135deg, var(--coral) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .qualities-hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .qualities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .quality-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            border-top: 4px solid var(--coral);
+        }
+
+        .quality-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 45px rgba(255,107,107,0.2);
+        }
+
+        .quality-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .quality-title {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .quality-description {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .quality-reason {
+            font-size: 0.95rem;
+            color: var(--coral);
+            font-style: italic;
+            padding-top: 15px;
+            border-top: 2px solid #eee;
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, var(--coral) 0%, #ff8c8c 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            margin: 60px 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quote-section p {
+            font-size: 1.8rem;
+            font-family: 'Great Vibes', cursive;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .qualities-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .qualities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-section {
+                padding: 40px 20px;
+            }
+
+            .quote-section p {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="qualities-hero" data-aos="fade-down">
+        <h1>Why I Love You</h1>
+        <p style="font-size: 1.2rem;">The reasons my heart chose you</p>
+    </div>
+
+    <div class="qualities-grid">
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="quality-icon">✨</div>
+            <div class="quality-title">Your Faith</div>
+            <div class="quality-description">Your unwavering commitment to Allah and Islam. The way you pray, the way you think of others, the way you live by Islamic principles.</div>
+            <div class="quality-reason">"Marry for four reasons... for her deen (religion) is best."</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="quality-icon">💚</div>
+            <div class="quality-title">Your Kindness</div>
+            <div class="quality-description">The way you treat people with compassion. Your gentle words and your caring actions make the world a better place.</div>
+            <div class="quality-reason">Kindness is the most beautiful language you speak.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="quality-icon">😊</div>
+            <div class="quality-title">Your Smile</div>
+            <div class="quality-description">That genuine, beautiful smile that lights up my entire world. It's contagious and reminds me why I fall in love with you every single day.</div>
+            <div class="quality-reason">Your smile is my favorite prayer.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="quality-icon">🧠</div>
+            <div class="quality-title">Your Intellect</div>
+            <div class="quality-description">Your thoughtful perspective, your wisdom, and your ability to see things deeply. I love talking to you and learning from your unique mind.</div>
+            <div class="quality-reason">Intelligence in the heart is beauty.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="quality-icon">💪</div>
+            <div class="quality-title">Your Strength</div>
+            <div class="quality-description">The way you face challenges with grace and courage. Your resilience inspires me to be a better version of myself every day.</div>
+            <div class="quality-reason">You are stronger than you believe.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="quality-icon">🎨</div>
+            <div class="quality-title">Your Creativity</div>
+            <div class="quality-description">The way you see beauty in ordinary things. Your creativity and imagination make life with you an adventure.</div>
+            <div class="quality-reason">You paint life in colors I never knew existed.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="700">
+            <div class="quality-icon">🤗</div>
+            <div class="quality-title">Your Empathy</div>
+            <div class="quality-description">Your ability to understand and feel what others feel. You make people feel seen and valued, and you do that for me every day.</div>
+            <div class="quality-reason">You understand me without me having to explain.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="800">
+            <div class="quality-icon">🌟</div>
+            <div class="quality-title">Your Presence</div>
+            <div class="quality-description">Just being near you calms my soul. Your presence brings me peace and comfort in a way nothing else can.</div>
+            <div class="quality-reason">You are my sanctuary.</div>
+        </div>
+
+        <div class="quality-card" data-aos="zoom-in" data-aos-delay="900">
+            <div class="quality-icon">❤️</div>
+            <div class="quality-title">Your Heart</div>
+            <div class="quality-description">The way you love so deeply and purely. You give yourself completely, and that kind of love deserves to be cherished forever.</div>
+            <div class="quality-reason">Your heart is my home.</div>
+        </div>
+
+    </div>
+
+    <div class="quote-section" data-aos="fade-up">
+        <p>You are everything I prayed for and more than I dreamed of.</p>
+    </div>
+
+    <footer>
+        <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem;">Eternally Yours</p>
+        <p style="margin-top: 15px;">Thank you for being you</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+
+</body>
+</html>
