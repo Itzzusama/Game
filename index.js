@@ -72,6 +72,7 @@
         </div>
     </section>
 
+
     <!-- SECTION 5: COMPLETE COLLECTION -->
     <section class="collection-section">
         <div class="container" data-aos="fade-up">
