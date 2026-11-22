@@ -674,19 +674,11 @@ main {
 @keyframes letter-in { from { opacity: 0; transform: translateY(10px); } }
 .letter {
   width: min(790px,100%); margin: auto; padding: clamp(28px,7vw,70px);
-  border: 1px solid var(--line); border-radius: 4px 28px;
-  background: linear-gradient(90deg,transparent 0 38px,rgba(216,27,96,.12) 39px 40px,transparent 41px),
-    repeating-linear-gradient(#ffe7ef 0 36px,rgba(161,13,66,.16) 37px,#ffe7ef 38px);
-  box-shadow: 0 25px 70px rgba(99,19,42,.14);
-}
-.birthday-letter {
-  border-color: rgba(216,27,96,.27);
-  background:
-    linear-gradient(135deg, rgba(255,230,239,.98), rgba(245,171,199,.94)),
-    repeating-linear-gradient(#fffdfb 0 36px,rgba(212,163,115,.16) 37px,#fffdfb 38px);
+  border: 1px solid rgba(216,27,96,.27); border-radius: 4px 28px;
+  background: linear-gradient(135deg, #ffe6ef, #f5abc7);
   box-shadow: 0 32px 90px rgba(122,16,53,.22), inset 0 1px 0 #fff;
 }
-.birthday-letter .dua-box {
+.letter .dua-box {
   background: linear-gradient(145deg, rgba(255,247,250,.96), rgba(247,198,216,.72));
   box-shadow: 0 12px 28px rgba(117,22,53,.08);
 }
@@ -887,9 +879,6 @@ main {
   .timeline-item::after, .timeline-item:nth-child(even)::after { top: 24px; right: auto; left: 4px; }
   .letter {
     padding: 28px 22px;
-    background: repeating-linear-gradient(#ffe3ed 0 36px,rgba(161,13,66,.16) 37px,#ffe3ed 38px);
-  }
-  .letter.birthday-letter {
     background: linear-gradient(145deg, #ffd8e6, #ef9fbe);
   }
   .tab-buttons { justify-content: flex-start; border-radius: 18px; }
